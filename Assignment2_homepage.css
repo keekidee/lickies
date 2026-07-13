@@ -1,0 +1,9 @@
+/* Full Name:Jiao Wenbo, Admin no. :261393E */
+
+body { margin: 0;font-family: 'Fredoka One', cursive; background-color: #ece5d5;}
+ h1 { text-align: center; color: #eea8a8;}
+        
+ nav { background-color: #f7d9d9; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;}
+ nav ul { list-style-type: none; margin: 0; padding: 0;}
+ nav li{ display: inline; margin-right: 20px;}
+ nav a { text-decoration: none; color: #3c3c3c; font-weight: bold;}
