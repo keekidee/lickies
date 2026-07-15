@@ -1,0 +1,151 @@
+<!-- Author: melanie tay min ling, 261291W. -->
+<!-- ^^^ Required at the top of every HTML file in your project! -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Activity 2: Product Catalogue Table — Bubble Tea Bros</title>
+
+    <!-- Modern styling: in the old days people used border="1",
+         cellpadding="10", bgcolor="orange"... those attributes are
+         OBSOLETE in HTML5 and will FAIL validation (= lost marks!).
+         Today we use a few lines of CSS instead. You'll learn CSS
+         properly in Week 13 — for now, just keep this block as-is. -->
+    <style>
+        table       { border-collapse: collapse; }
+        th, td      { border: 1px solid #444; padding: 8px; }
+        th          { background-color: #f7c873; }
+        caption     { font-weight: bold; padding: 6px; }
+    </style>
+</head>
+<body>
+
+    <h1>Bubble Tea Bros — Product Catalogue</h1>
+    <p>insert description</p>
+
+    <!-- ============================================================
+         TASK 1: Complete the price table.
+         Structure reminder:  table → rows (<tr>) → cells inside rows.
+         <th> = header cell (bold)      <td> = normal data cell
+         <caption> must come IMMEDIATELY after <table>.
+
+         TODO (a): add a caption: "Menu &amp; Price List (June 2026)"
+         TODO (b): the header row is done — add TWO more product rows:
+                   Taro Milk Tea,    Medium, $4.20
+                   Lychee Green Tea, Large,  $4.80
+         ============================================================ -->
+    <h2>Price List</h2>
+    <table>
+        <!-- TODO (a): caption goes here -->
+        <tr>
+            <th scope="col">Size</th>
+            <th scope="col">Price</th>
+        </tr>
+        <tr>
+            <td>1 scoop</td>
+            <td>$2.99</td>
+        </tr>
+        <tr>
+            <td>2 scoops</td>
+            <td>$4.99</td>
+        </tr>
+        <tr>
+            <td>3 scoops</td>
+            <td>$9.00</td>
+        </tr>
+
+    <tr>
+        <td>Special Edition Flavours</td>
+        <td>+$2.50</td>
+    </tr>
+        <!-- TODO (b): add the two remaining product rows here -->
+
+    </table>
+
+    <!-- ============================================================
+         TASK 2: Images inside a table cell.
+         ANY content can go inside a <td> — including pictures!
+         Your real catalogue should show product photos.
+
+         TODO: in the empty cell below, add an image using:
+         <img src="https://placehold.co/100x100" alt="Taro Milk Tea" width="100">
+         (In your project, use your own photo files instead,
+          and ALWAYS include the alt text.)
+         ============================================================ -->
+    <h2>Task 2: Catalogue with Pictures</h2>
+    <table>
+        <tr>
+            <th scope="col">Photo</th>
+            <th scope="col">Product</th>
+            <th scope="col">Price</th>
+        </tr>
+        <tr>
+            <td><img src="https://takestwoeggs.com/wp-content/uploads/2021/04/Brown-Sugar-Milk-Tea-Boba-Recipe-Takestwoeggs-Easy-Asian-Inspired-Recipes-sq.jpg" alt="Brown Sugar Boba Milk" width="100"></td>
+            <td>Brown Sugar Boba Milk</td>
+            <td>$4.50</td>
+        </tr>
+        <tr>
+            <td><img src="https://tyberrymuch.com/wp-content/uploads/2022/07/taro-milk-tea-recipe-1.jpg" alt="Taro Milk Tea" width="100"></td>
+            <td>Taro Milk Tea</td>
+            <td>$4.20</td>
+        </tr>
+    </table>
+
+    <!-- ============================================================
+         TASK 3: Merging cells with colspan / rowspan.
+         colspan="2" makes ONE cell stretch across 2 COLUMNS.
+         rowspan="2" makes ONE cell stretch down 2 ROWS.
+
+         The table below shows opening hours. The "Weekdays" cell
+         should cover Mon–Fri info in one merged cell.
+
+         TODO: the last row should show "Closed on Public Holidays"
+         stretched across BOTH columns. Add one <tr> containing a
+         single <td> with the correct colspan.
+         ============================================================ -->
+    <h2>Task 3: Opening Hours (merged cells)</h2>
+    <table>
+        <tr>
+            <th scope="col">Day</th>
+            <th scope="col">Hours</th>
+        </tr>
+        <tr>
+            <td>Mon – Fri</td>
+            <td rowspan="2">10am – 9pm</td>
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <!-- no second cell here — the rowspan cell above covers it! -->
+        </tr>
+        <tr>
+            <td>Sunday</td>
+            <td>11am – 6pm</td>
+        </tr>
+        <!-- TODO: add the "Closed on Public Holidays" row here -->
+         <tr>
+            <td rowspan="2">Closed on Public Holidays</td>
+         </tr>
+
+    </table>
+
+    <!-- ============================================================
+         ⭐ CHALLENGE: build a category column.
+         Recreate Task 1's table but add a "Category" column on the
+         left, using rowspan so "Milk Tea" covers 2 rows and
+         "Fruit Tea" covers 1 row.
+         ============================================================ -->
+    <h2>⭐ Challenge: Catalogue with Category Column</h2>
+    <!-- TODO: build your table here -->
+
+
+
+    <hr>
+    <p><small>💡 For your project: replace the drinks with YOUR team's
+    products, swap the placeholder images for your own photos, and this
+    page becomes your Product Catalogue (assignment requirement c).
+    Check your HTML at <a href="https://validator.w3.org/">validator.w3.org</a>
+    — clean validation is in the A-grade rubric!</small></p>
+
+</body>
+</html>
