@@ -2,7 +2,7 @@
 
 
 body { margin: 0;font-family: 'Fredoka One', cursive; background-color: #ece5d5;}
- h1 { text-align: center; color: #eea8a8;font-family:'Lobster',cursive;}
+ h1 { text-align: center; color: #eea8a8;font-family:'Fredoka One', cursive;}
 
         
  nav { background-color: #f7d9d9; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;height: 60px; font-size: 1.2em;
@@ -20,13 +20,13 @@ nav a:hover { color: #eea8a8; font-size: 1.1em; text-decoration: underline; tran
  .header { text-align: center; margin-top: 20px;font-size: 4em; color: #cc7f7f; text-shadow: 2px 2px #f7d9d9; }
 
  .welcome { text-align: center; margin-top: 20px;font-size: 10em; color: #ff8495;
-     text-shadow: 6px 8px #2c1605; }
+     text-shadow: 6px 8px #2c1605; font-family: 'Fredoka One', cursive; }
 
      .scrolling-banner {
- /* Adjust height as needed */
-overflow: hidden;
+
+
 white-space: nowrap;
-position: relative;
+
 }
 
 .scrolling-banner img {
