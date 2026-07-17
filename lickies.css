@@ -6,3 +6,4 @@ body { margin: 0;font-family: 'Fredoka One', cursive; background-color: #ece5d5;
  nav ul { list-style-type: none; margin: 0; padding: 0;}
  nav li{ display: inline; margin-right: 20px;}
  nav a { text-decoration: none; color: #3c3c3c; font-weight: bold;}
+h2 { text-align: center; color: #000000 }
