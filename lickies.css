@@ -11,6 +11,7 @@ body { margin: 20px; font-family: 'Fredoka One', cursive; background-color: #ece
 {text-decoration-line: underline;
     text-decoration-color: #f4a8b8;
     text-decoration-thickness: 4px;}
+
  /* Navigation bar styles */
 
  nav { background-color: #f7d9d9; display: flex; justify-content: space-between; align-items: center; padding: 10px 30px;}
