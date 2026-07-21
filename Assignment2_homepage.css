@@ -1,9 +1,47 @@
 /* Full Name:Jiao Wenbo, Admin no. :261393E */
 
+
 body { margin: 0;font-family: 'Fredoka One', cursive; background-color: #ece5d5;}
  h1 { text-align: center; color: #eea8a8;}
+
         
- nav { background-color: #f7d9d9; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;}
+ nav { background-color: #f7d9d9; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;height: 60px; font-size: 1.2em;
+   position:fixed; top:0; left:0; width:100%; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); z-index: 1000; }
+   /* z index is used to control the stacking order of elements */
+  
  nav ul { list-style-type: none; margin: 0; padding: 0;}
- nav li{ display: inline; margin-right: 20px;}
- nav a { text-decoration: none; color: #3c3c3c; font-weight: bold;}
+ nav li{ display: inline; margin-right: 20px; font-size:larger}
+ nav a { text-decoration: none; color: #cc7f7f; font-weight: bold;}
+nav a:hover { color: #eea8a8; font-size: 1.1em; text-decoration: underline; transition: transform 0.3s ease;background-color: #ffcfcf; border-radius: 10px; padding: 5px 10px;   }
+
+ .bottom { }
+ .banner { display: block; margin: 0 auto; border-radius: 10px;box-shadow: 4px 16px 32px rgba(0, 0, 0, 0);  } 
+ .banner:hover { transform: scale(1.1); transition: transform 0.3s ease; box-shadow: 8px 16px 32px rgba(255, 198, 198, 0.5); cursor: pointer; border-color: #ffcfcf; border-width: 3px; border-style: solid; }
+ .header { text-align: center; margin-top: 20px;font-size: 4em; color: #cc7f7f; text-shadow: 2px 2px #f7d9d9; }
+
+ .welcome { text-align: center; margin-top: 20px;font-size: 10em; color: #ff8495;
+     text-shadow: 6px 8px #2c1605; }
+
+     .scrolling-banner {
+
+
+white-space: nowrap;
+
+}
+
+.scrolling-banner img {
+  width: 864px;
+  height: 446.4px;
+  display: inline-block;
+  animation: scroll 20s linear infinite;
+  margin-right: 20px; 
+}
+@keyframes scroll {
+ 0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-310%);
+  }
+}
+
