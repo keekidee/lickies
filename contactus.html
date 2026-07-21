@@ -1,13 +1,155 @@
-<!-- Author : Philip-->
+<!--DE LEON OLSEN PHILIP CASIL, 261056B-->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+   
+   
+    <link rel="stylesheet" href="contactus.css">
+    
+    <!--Freoka One font-->
+     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
+  </head>
 
 
-<h2>FAQ</h2>
-<details>
-    <summary>What are your store hours?</summary>
-    <p>Our stores are open from 10:00 AM to 10:00 PM daily.</p>
-</details>
-<details>
-    <summary>Are your products suitable for people with dietary restrictions?</summary>
-    <p>Yes, we offer a variety of options for different dietary needs, including dairy-free 
-    and gluten-free choices.</p>
-</details>
+
+
+  <body>
+    <!--Nav bar, not mine-->
+    <header>
+  
+    <img src="lickies logo.png" alt="Lickies Logo" class="logo">
+      <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="productcatalogue.html">MENU</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="orderform.html">ORDER</a></li>
+            <li><a href="feedback.html">FEEDBACK</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+      </header>
+
+      <h1>Contact Us</h1>
+      
+      
+       
+
+      <!--Accordian-->
+      <ul class="accordion">
+        <li>
+          <input type="radio" name="accordion" id="first" checked>
+          <label for="first">Customer support</label>
+          <div class="content">
+            <label for="custname">*Name</label>
+            <br>
+            
+            <input type="email" name="custname" id="custname" size="30" placeholder="Alice Soh">
+            
+<br>
+            <label for="email">*Email</label><br>
+            <input type="text" name="email" id="email" size="30" placeholder="you@example.com">
+<br>
+            <!--Dropdown list-->
+            <label for="enquiry">*Please tell us reason for enquiry</label><br>
+            <select name="enquiry" id="enquiry">
+              <option value="General enquiry">General enquiry</option>
+              <option value="Product information">Product information</option>
+              <option value="Flavour suggestions">Flavour suggestions</option>
+              <option value="Dietary information">Dietary information</option>
+              <option value="Catering or events">Catering or events</option>
+            </select>
+            <br>
+            <label for="elaborate">*Please elaborate</label><br>
+<textarea id="elaborate" name="elaborate" rows="10" cols="60" placeholder="Type your text here..."></textarea>
+<br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear Form">
+          </div>
+        </li>
+         
+
+      <!--2nd list item-->
+      <li>
+        <input type="radio" name="accordion" id="second">
+        <label for="second">FAQ</label>
+        <div class="content">
+          <details>
+            <summary>Is your ice-cream halal certified?</summary>
+            <p>Yes! Our ice cream is halal-certified, so you can enjoy your favourite flavours with peace of mind.</p>
+          </details>
+          <details>
+            <summary>Do you have dairy free options?</summary>
+            <p>Unfortunately, we currently do not offer dairy-free ice cream. However, we are always exploring new flavours and options for our customers. If you have an idea, you can send via our feedback form!</p>
+        </details>
+        <details>
+            <summary>Can I sample the ice cream before ordering?</summary>
+            <p>Absolutely! We encourage customers to sample our flavours before choosing their perfect scoop.</p>
+            </details>
+            <details>
+            <summary>Do you only offer delivery in Singapore?</summary>
+            <p>Yes. Our islandwide delievery is only available in Singapore.</p> 
+            </details>
+            <details>
+            <summary>Can i order ice cream for parties and events?</summary>
+            <p>Yes! Our ice cream cakes can be customised for special occasions. Please place your order at least 3–5 days in advance.</p>
+          </details>
+          <details>
+            <summary>How should I store my ice cream?</summary>
+            <p>Store it in the fridge or freezer! Although our ice cream never melts, it does spoil! Best consumed by 3 days after purchase.</p>
+              </details>
+              <details>
+                <summary>Do you support any charities?</summary>
+                <p>Yes! We are proud to say that we support a different charity every 2 months! We have supported many charities like the Speedwagon Foundation, Parade of Hope foundation, Open Path Alliances and many more! We want to support as many charities as we can so we can do our part to make the world a better place. </p>
+              </details>
+              <details>
+                <summary>Where can we contact you?</summary>
+               <p> You can reach us through our Contact Us page for questions, feedback, event enquiries or other general enquiries. We will do our best to get back to you as soon as possible.</p>
+        </div>
+      </li>
+
+      <!--3rd item-->
+       <li>
+        <input type="radio" name="accordion" id="third">
+        <label for="third">Address</label>
+        <div class="content">
+          <p style="font-size:20px";>You can find us at:</p>
+          <ul>
+            <li>Address:30 Sembawang Drive, Singapore 757713</li>
+            <li>Location: Situated next to Sembawang MRT station and the Sembawang bus interchange</li>
+      </div>
+      </li>
+
+      <!--4th item-->
+      
+      <li>
+        <input type="radio" name="accordion" id="fourth">
+        <label for="fourth">Email</label>
+        <div class="content">
+          <ul>
+            <li>
+          <p>We'd prefer you use the form above but if it isn't working you can contact us via email. 
+            We aim to get back to all emails within 1-2 business days </p>
+            <p style="text-align:center"; font-size:20px;> Email: lickies.icecream@gmail.com</p>
+            </li>
+            </ul>
+        </div>
+      </li>
+      </ul>
+  </body>
+  </html>
+  
+<!--Footer-->
+<hr>
+<div class="footer">
+     <p>📍 Singapore</p>
+    <p>📧 lickies.icecream@gmail.com</p>
+    <p>☎ +65 1234 5678</p>
+    <p style="text-align: center;">&copy; 2023 Lickies. All rights reserved.</p>
+</div>
+
+<button onclick="window.location.href='credits.html'" class="button-container">Credits</button>
