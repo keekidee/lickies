@@ -69,5 +69,5 @@ nav a:hover { color: #eea8a8; font-size: 1.1em; text-decoration: underline; tran
 .content-row {display: flex; align-items: flex-start; gap: 30px;}
 
 /*button*/
-.button {background: #f7d9d9; color: #1b1a1a; border: none; padding: 10px 20px; border-radius: 5px; }
+.button {background: #f7d9d9; color: #1b1a1a; border: none; padding: 10px 20px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);}
 .button-container {background-color: #cc7f7f; font-family: 'Fredoka One', cursive; border-radius: 12px ; cursor: pointer; width: 200px; height: 30px;}
