@@ -1,14 +1,14 @@
 /* Full Name:Jiao Wenbo, Admin no. :261393E */
 
-#logo1 {width: 600px; height: 348.75px; display: block; margin: 0 auto; top: 50%; left: 50%; transform: translate(0%, -23%); }
+#logo1{width: 600px; height: 348.75px; display: block; margin: 0 auto; top: 50%; left: 50%; transform: translate(0%, -23%); }
 
-html { overflow-y: scroll; }
-body { margin: 0; font-family: 'Fredoka One', cursive; background-color: #ece5d5; overflow-x: hidden; }
- h1 { text-align: center; color: #eea8a8;}
+html{ overflow-y: scroll; }
+body{ margin: 0; font-family: 'Fredoka One', cursive; background-color: #ece5d5; overflow-x: hidden; }
+ h1{ text-align: center; color: #eea8a8;}
 
         
- nav { background-color: #f7d9d9; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;height: 60px; font-size: 1.2em;
-   position:fixed; top:0; left:0; width:100%; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); z-index: 1000; }
+ nav{ background-color: #f7d9d9; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;height: 60px; font-size: 1.2em;
+   position:fixed; top:0; left:0; width:100%; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); z-index: 10; }
    /* z index is used to control the stacking order of elements */
   
  nav ul { list-style-type: none; margin: 0; padding: 0;}
@@ -16,7 +16,7 @@ body { margin: 0; font-family: 'Fredoka One', cursive; background-color: #ece5d5
  nav a { text-decoration: none; color: #cc7f7f; font-weight: bold;}
 nav a:hover { color: #eea8a8; font-size: 1.1em; text-decoration: underline; transition: transform 0.3s ease;background-color: #ffcfcf; border-radius: 10px; padding: 5px 10px;   }
 
- .bottom { display: block; background-color: #f7d9d9; color: #cc7f7f; font-weight: bold; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-size: 1.2em; margin-top: 20px;}
+ .footer { display: block; background-color: #f7d9d9; color: #cc7f7f; font-weight: bold; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-size: 1.2em; margin-top: 20px;}
  .banner { display: block; margin: 0 auto; border-radius: 24px;box-shadow: 4px 16px 32px rgba(0, 0, 0, 0);  } 
  .banner:hover { transform: scale(1.1); transition: transform 0.3s ease; box-shadow: 8px 16px 32px rgba(255, 198, 198, 0.5); cursor: pointer; border-color: #ffcfcf; border-width: 3px; border-style: solid; }
  .header { text-align: center; margin-top: 20px;font-size: 4em; color: #cc7f7f; text-shadow: 2px 2px #f7d9d9; }
@@ -96,9 +96,45 @@ white-space: nowrap;
   }
   #promotion:hover {
   
-    transform: scale(1.0051) ;
+    transform: scale(1.005) ;
   
   }
 #cat {color:#f7d9d9}
 
-#podium {width: 1100px; height: 600px; display: block; margin: 0 auto; position: relative; border-radius: 24px; box-shadow: 4px 16px 32px rgba(0, 0, 0, 0); transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;}
+#podium {width: 1100px; height: 650px; 
+  
+  display: block; margin: 0 auto; position: relative;
+   border-radius: 24px; 
+   box-shadow: 4px 16px 32px rgba(0, 0, 0, 0); 
+   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+   
+  }
+  #podium:hover { transform: scale(1.005) ;
+  
+  }
+
+  .tops { display: flex; justify-content: center; align-items: center;z-index: 5; 
+    border-radius: 10000000px 
+ }
+
+    #top1{  height: 300px; width: 250px;top: 335%; left: 42%; position: absolute; transition: transform 0.3s ease;animation:bounce2 3s infinite }
+    #top2{  height: 350px; width: 250px;top: 337%; left: 23%; position: absolute; transition: transform 0.3s ease, ;animation:bounce2 2.5s infinite }
+    #top3{height: 290px; width: 240px;top: 340%; left: 61%; position: absolute;transition: transform 0.3s ease, ;animation:bounce2 2.3s infinite }
+    #top4{height: 200px; width: 160px;top: 372%; left: 15%; position: absolute;transition: transform 0.3s ease, ;animation:bounce2 3s infinite }
+    #top5{height: 170px; width: 160px;top: 376%; left: 40%;position:absolute;  z-index: 5;transition: transform 0.3s ease, ;animation:bounce2 2.5s infinite  }
+    #top6{height: 220px; width: 180px;top: 370%; left: 60%;position:absolute;  z-index: 5;transition: transform 0.3s ease, ;animation:bounce2 2.8s infinite  }
+    @keyframes bounce2 {
+      0%, 100% {
+        transform: translateY(0%);
+      }
+      50% {
+        transform: translateY(5%);
+      }
+    }
+
+  #top1:hover, #top2:hover, #top3:hover,#top4:hover, #top5:hover,#top6:hover, .tops:hover{
+    animation:none;
+    transform: scale(1.2) translate(0%, -10%);
+      cursor: pointer;
+    
+  } 
