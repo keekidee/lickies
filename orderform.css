@@ -1,33 +1,18 @@
-.form-box-big {
+.form-page-box {
     background-color: white;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0px 4px 12px #000000;
-    width: 600px;
+    width: 800px;
     box-sizing: border-box;
-    margin: 0 auto;
 }
 
-.form-box-small {
-    background-color: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 12px #000000;
-    width: 450px;
-    box-sizing: border-box;
-    margin: 0 auto;
-}
-
-
-.form-container{
+body{
+    display: flex;
     justify-content: center;
     align-items: center;
-    min-height: auto;
-}
-
-input[type="text"], input[type="email"], select, textarea {
-    width: 80%;
-    box-sizing: border-box;
+    min-height: 100vh;
+    margin: 0;
 }
 .btn {
   border: 2px solid black;
@@ -38,7 +23,7 @@ input[type="text"], input[type="email"], select, textarea {
   cursor: pointer;
 }
 
-/*w3 schools*/
+/* Green */
 .submit {
   border-color: #f18080;
   color: #f18080;
@@ -48,7 +33,6 @@ input[type="text"], input[type="email"], select, textarea {
   background-color: #f18080;
   color: white;
 }
-/*credit:*/
 
 .textarea {
   width: 100%;
