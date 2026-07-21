@@ -144,7 +144,7 @@ nav a:hover { color: #eea8a8; font-size: 1.1em;
 #cat {color:#f7d9d9}
 /* ignore this its not relevant*/
 
-#podium {width: 1100px; height: 650px; 
+#podium {width: 1100px; height: 680px; 
   
   display: block; margin: 0 auto; position: relative;
    border-radius: 24px; 
@@ -160,12 +160,12 @@ nav a:hover { color: #eea8a8; font-size: 1.1em;
     border-radius: 10000000px 
  }
 
-    #top1{height: 300px; width: 250px;top: 335%; left: 42%; position: absolute; transition: transform 0.3s ease;animation:bounce2 3s infinite }
-    #top2{height: 350px; width: 250px;top: 337%; left: 23%; position: absolute; transition: transform 0.3s ease, ;animation:bounce2 2.5s infinite }
-    #top3{height: 290px; width: 240px;top: 340%; left: 61%; position: absolute;transition: transform 0.3s ease, ;animation:bounce2 2.3s infinite }
-    #top4{height: 200px; width: 160px;top: 372%; left: 15%; position: absolute;transition: transform 0.3s ease, ;animation:bounce2 3s infinite }
-    #top5{height: 170px; width: 160px;top: 376%; left: 40%;position:absolute;  z-index: 5;transition: transform 0.3s ease, ;animation:bounce2 2.5s infinite  }
-    #top6{height: 220px; width: 180px;top: 370%; left: 60%;position:absolute;  z-index: 5;transition: transform 0.3s ease, ;animation:bounce2 2.8s infinite  }
+    #top1{height: 300px; width: 250px;top: 341%; left: 42%; position: absolute; transition: transform 0.3s ease;animation:bounce2 3s infinite }
+    #top2{height: 350px; width: 250px;top: 342%; left: 23%; position: absolute; transition: transform 0.3s ease;animation:bounce2 2.5s infinite }
+    #top3{height: 290px; width: 240px;top: 345%; left: 61%; position: absolute;transition: transform 0.3s ease;animation:bounce2 2.3s infinite }
+    #top4{height: 200px; width: 160px;top: 380%; left: 15%; position: absolute;transition: transform 0.3s ease; }
+    #top5{height: 170px; width: 160px;top: 383%; left: 40%;position:absolute;transition: transform 0.3s ease;  }
+    #top6{height: 220px; width: 180px;top: 378%; left: 60%;position:absolute;transition: transform 0.3s ease; }
    /* messy code */
    
     @keyframes bounce2 {
