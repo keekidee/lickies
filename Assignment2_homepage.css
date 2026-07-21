@@ -1,7 +1,9 @@
 /* Full Name:Jiao Wenbo, Admin no. :261393E */
 
+#logo1 {width: 600px; height: 348.75px; display: block; margin: 0 auto; top: 50%; left: 50%; transform: translate(0%, -23%); }
 
-body { margin: 0;font-family: 'Fredoka One', cursive; background-color: #ece5d5;}
+html { overflow-y: scroll; }
+body { margin: 0; font-family: 'Fredoka One', cursive; background-color: #ece5d5; overflow-x: hidden; }
  h1 { text-align: center; color: #eea8a8;}
 
         
@@ -14,13 +16,14 @@ body { margin: 0;font-family: 'Fredoka One', cursive; background-color: #ece5d5;
  nav a { text-decoration: none; color: #cc7f7f; font-weight: bold;}
 nav a:hover { color: #eea8a8; font-size: 1.1em; text-decoration: underline; transition: transform 0.3s ease;background-color: #ffcfcf; border-radius: 10px; padding: 5px 10px;   }
 
- .bottom { }
- .banner { display: block; margin: 0 auto; border-radius: 10px;box-shadow: 4px 16px 32px rgba(0, 0, 0, 0);  } 
+ .bottom { display: block; background-color: #f7d9d9; color: #cc7f7f; font-weight: bold; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-size: 1.2em; margin-top: 20px;}
+ .banner { display: block; margin: 0 auto; border-radius: 24px;box-shadow: 4px 16px 32px rgba(0, 0, 0, 0);  } 
  .banner:hover { transform: scale(1.1); transition: transform 0.3s ease; box-shadow: 8px 16px 32px rgba(255, 198, 198, 0.5); cursor: pointer; border-color: #ffcfcf; border-width: 3px; border-style: solid; }
  .header { text-align: center; margin-top: 20px;font-size: 4em; color: #cc7f7f; text-shadow: 2px 2px #f7d9d9; }
 
  .welcome { text-align: center; margin-top: 20px;font-size: 10em; color: #ff8495;
      text-shadow: 6px 8px #2c1605; }
+     
 
      .scrolling-banner {
 
@@ -45,3 +48,57 @@ white-space: nowrap;
   }
 }
 
+ 
+  #promotion {
+    width: 1100px;
+    height: 600px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 24px;
+    box-shadow: 4px 16px 32px rgba(0, 0, 0, 0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+   
+  
+  }
+  #promotion-button {
+    display: block;
+    margin: -60px auto;
+    padding: 30px 40px;
+    font-size: 3em;
+    background-color: #e24949;
+    color: #f2e3e3;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Fredoka One', cursive;
+    transform: translate(0%, -150%);
+    animation: bounce 1s infinite;
+    border: 13px solid #8a2424;
+  }
+  #promotion-button:hover {
+    background-color: #f03838;
+    border: 13px solid #b81f1f;
+    color: #e6dcdc;
+    transform: scale(1.05) translate(0%, -150%);
+    text-shadow: 2px 2px #3d3535;
+    box-shadow: 0 0 20px #0f0e0e;
+    animation:none;
+  }
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(-150%);
+    }
+    50% {
+      transform: translateY(-151%);
+    }
+  }
+  #promotion:hover {
+  
+    transform: scale(1.0051) ;
+  
+  }
+#cat {color:#f7d9d9}
+
+#podium {width: 1100px; height: 600px; display: block; margin: 0 auto; position: relative; border-radius: 24px; box-shadow: 4px 16px 32px rgba(0, 0, 0, 0); transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;}
