@@ -15,7 +15,7 @@
             <li><a href="aboutus.html">ABOUT US</a></li>
             <li><a href="orderform.html">ORDER</a></li>
             <li><a href="feedback.html">FEEDBACK</a></li>
-            <li><a href="contactus.html">CONTACT US</a></li>
+            <li><a href="faq.html">FAQ</a></li>
         </ul>
     </nav>   
     </header>
@@ -28,24 +28,32 @@
     <!-- css style sheet done by kira -->
      <!--gallery item code taken from w3schools and ai assisted for the gallery item, bestsellers, flavours, toppings menu image display-->
     <style>
-        table       { border-collapse: collapse; }
+        table       { border-collapse: collapse; margin: 0 auto;}
         th, td      { border: 1px solid #444; padding: 8px; }
         th          { background-color: #f8a0b3; }
         caption     { font-weight: bold; padding: 6px; }
+     .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
         .gallery-item {
-    width: 650px;      /* Smaller card */
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    width: 590px;      
+    border: none;
+    border-radius: 15px;
     overflow: hidden;
     text-align: center;
-    background: white;
+    background: transparent;
     transition: 0.3s;
 }
 
 .gallery-item img {
     width: 100%;
-    height: auto;     /* Smaller image */
+    height: auto;    
     object-fit: cover;
+    display: block;
+    border-radius: 15px;
 }
 
 .desc {
@@ -57,7 +65,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="lickies.css">
-    <link rel="stylesheet" href="productcatalogue1.html">
 </head>
 <body>
 
@@ -100,9 +107,8 @@
 <div class="gallery">
 
     <div class="gallery-item">
-        <img src="images/thaimilktea.jpeg" alt="Thai Milk Tea">
-        <div class="desc">Thai Milk Tea</div>
-        <div class="desc">Creamy and Aromatic, just like the original.</div>
+        <img src="images/mangothaimilktea.jpeg" alt="Mango Thai Milk Tea">
+        <div class="desc">Creamy and Aromatic, with a touch of Mango.</div>
         <div class="desc">Dairy</div>
        <!-- Add icon library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -112,28 +118,43 @@
        <span class="fa fa-star checked"></span>
        <span class="fa fa-star"></span>
        <span class="fa fa-star"></span>
+      <check { colour: orange;}></check>
+
     </div>
-  .checked {
-  color: orange;
-}
+ 
     <div class="gallery-item">
-        <img src="images/strawberrycheesecake.jpeg" alt="Strawberry Cheesecake">
-        <div class="desc">Strawberry Cheesecake</div>
+        <img src="images/mintbrownie.jpeg" alt="Mint Brownie">
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+        <div class="desc">rating</div>
     </div>
 
     <div class="gallery-item">
         <img src="images/biscoffbanana.jpeg" alt="Biscoff and Banana">
-        <div class="desc">Biscoff & Banana</div>
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+        <div class="desc">rating</div>
     </div>
 
     <div class="gallery-item">
-        <img src="images/cinnamoncoffee.jpeg" alt="Cinnamon and Coffee">
-        <div class="desc">Cinnamon & Coffee</div>
+        <img src="images/applecinnamon.jpeg" alt="Apple Cinnamon">
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+        <div class="desc">rating</div>
     </div>
 
     <div class="gallery-item">
         <img src="images/cookiesncream.jpeg" alt="Cookies and Cream">
-        <div class="desc">Cookies and Cream</div>
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+        <div class="desc">rating</div>
+    </div>
+
+        <div class="gallery-item">
+        <img src="images/strawberrycheesecake.jpeg" alt="Strawberry Cheesecake">
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+        <div class="desc">rating</div>
     </div>
 
 </div>
@@ -144,34 +165,46 @@
 <div class="gallery">
 
     <div class="gallery-item">
-        <img src="images/vanilla-strawberry.jpeg" alt="Vanilla Strawberry Milkshake">
-        <div class="desc">Vanilla Strawberry Milkshake</div>
+        <img src="images/vanillastrawberry.jpeg" alt="Vanilla Strawberry Milkshake">
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+        <div class="desc">rating</div>
 
     </div>
 
     <div class="gallery-item">
         <img src="images/cherryjasmine.jpeg" alt="Cherry Jasmine">
-        <div class="desc">Cherry Jasmine</div>
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+        <div class="desc">rating</div>
     </div>
 
     <div class="gallery-item">
-        <img src="images/matchastrawberry.jpeg" alt="Strawberry Matcha">
-        <div class="desc">Strawberry Matcha</div>
+        <img src="images/strawberrymatcha.jpeg" alt="Strawberry Matcha">
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+        <div class="desc">rating</div>
     </div>
 
     <div class="gallery-item">
-        <img src="images/pistachiohoney.jpeg" alt="Pistachio and Honeycomb Crunch">
-        <div class="desc">Pistachio & Honeycomb Crunch</div>
+        <img src="images/lavenderhoneycomb.jpeg" alt="Lavender Honeycomb">
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+        <div class="desc">rating</div>
     </div>
 
     <div class="gallery-item">
         <img src="images/tiramisu.jpeg" alt="Tiramisu">
-        <div class="desc">Tiramisu</div>
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+        <div class="desc">rating</div>
     </div>
 
     <div class="gallery-item">
-        <img src="images/mixedberries.jpeg" alt="Mixed Berries">
-        <div class="desc">Mixed Berries</div>
+        <img src="images/applewoodberries.jpeg" alt="Apple Wood and Berries">
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+        <div class="desc">rating</div>
     </div>
 
 </div>
@@ -183,57 +216,86 @@
 
     <div class="gallery-item">
         <img src="images/strawberry.jpeg" alt="Strawberry Drizzle">
-        <div class="desc">Strawberry Drizzle</div>
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+        <div class="desc">rating</div>
     </div>
 
     <div class="gallery-item">
         <img src="images/chocolate.jpeg" alt="Chocolate Drizzle">
-        <div class="desc">Chocolate Drizzle</div>
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+        <div class="desc">rating</div>
     </div>
 
     <div class="gallery-item">
         <img src="images/caramel.jpeg" alt="Caramel Drizzle">
-        <div class="desc">Caramel Drizzle</div>
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+        <div class="desc">rating</div>
     </div>
 
     <div class="gallery-item">
         <img src="images/honey.jpeg" alt="Honey Drizzle">
-        <div class="desc">Honey Drizzle</div>
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+        <div class="desc">rating</div>
     </div>
 
     <div class="gallery-item">
         <img src="images/marshmallows.jpeg" alt="Marshmallow Sprinkles">
-        <div class="desc">Marshmallows</div>
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+        <div class="desc">rating</div>
     </div>
 
     <div class="gallery-item">
         <img src="images/chocolatesprinkles.jpeg" alt="Chocolate Sprinkles">
-       <div class="desc">Chocolate Sprinkles</div>
+       <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+        <div class="desc">rating</div>
     </div>
 
     <div class="gallery-item">
         <img src="images/crushedpeanuts.jpeg" alt="Crushed Peanuts">
-        <div class="desc">Crushed Peanuts</div>
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+        <div class="desc">rating</div>
     </div>
 
     <div class="gallery-item">
         <img src="images/rainbowsprinkles.jpeg" alt="Rainbow Sprinkles">
-        <div class="desc">Rainbow Sprinkles</div>
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+        <div class="desc">rating</div>
     </div>
 
      <div class="gallery-item">
         <img src="images/poppingcandy.jpeg" alt="Popping Candy">
-        <div class="desc">Popping Candy</div>
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+        <div class="desc">rating</div>
     </div>
 
     <div class="gallery-item">
         <img src="images/poppingpearls.jpeg" alt="Popping Pearls">
-        <div class="desc">Popping Pearls</div>
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+        <div class="desc">rating</div>
     </div>
 
     <div class="gallery-item">
         <img src="images/freezedriedfruitmix.jpeg" alt="Freeze Dried Fruit Mix">
-        <div class="desc">Freeze Dried Fruit Mix</div>
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+        <div class="desc">rating</div>
+    </div>
+
+        <div class="gallery-item">
+        <img src="images/crushedicecreamcones.jpeg" alt="Crushed Ice Cream Cones">
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+        <div class="desc">rating</div>
     </div>
 
 </div> <br>
