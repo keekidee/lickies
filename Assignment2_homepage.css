@@ -40,7 +40,7 @@ user-select: none;   }
 
  nav ul { list-style-type: none; }
  /* list styles remove the  bullet points */
- nav li{ display: inline; margin-right: 50px; font-size:larger}
+ nav li{ display: inline; margin-right: 50px; font-size:  1.2em;}
  /* display inline makes the list items appear on the same line */
  /* margin-right creates space between the words */
  nav a { text-decoration: none; color: #cc7f7f; font-weight: bold;}
@@ -113,7 +113,7 @@ nav a:hover { color: #eea8a8; font-size: 1.1em;
     font-size: 3em;
     background-color: #e24949;
     color: #f2e3e3;
-    border: none;
+
     border-radius: 100px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
