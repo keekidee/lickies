@@ -13,7 +13,11 @@ html{ overflow-y: scroll; }
 /* to determine the vertical scroll behavior */
 
 body{font-family: 'Fredoka One', cursive; 
-  background-color: #ece5d5; overflow-x: hidden; }
+  background-color: #ece5d5; overflow-x: hidden;
+  -webkit-user-select: none;
+    -moz-user-select: none;  
+    -ms-user-select: none;   }
+    /* disables the ability to select elements and images on the webpage */
   /* overflow x is hidden to disable user from horizontally scrolling */
  h1{ text-align: center; color: #eea8a8;}
  /* text align aligns the text to the center */
@@ -141,8 +145,7 @@ nav a:hover { color: #eea8a8; font-size: 1.1em;
   /* moves from y axis -150 to -151 */
 
   #promotion:hover {transform: scale(1.005);}
-#cat {color:#f7d9d9}
-/* ignore this its not relevant*/
+
 
 #podium {width: 1100px; height: 680px; 
   
@@ -192,3 +195,4 @@ nav a:hover { color: #eea8a8; font-size: 1.1em;
       cursor: pointer;
     
   } 
+
