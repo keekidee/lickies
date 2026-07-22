@@ -92,9 +92,9 @@ nav a:hover { color: #eea8a8; transform: scale(1.05); text-decoration: underline
 .content-row {display: flex; align-items: flex-start; gap: 30px;}
 
 /*button*/
-.button {background: #f7d9d9; color: #1b1a1a; border: none; padding: 10px 20px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);}
+.button {background: #f7d9d9; color: #1b1a1a; border: none; padding: 10px 20px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);align-items: center;}
 .button-container {background-color: #cc7f7f; font-family: 'Fredoka One', cursive; border-radius: 12px ; cursor: pointer; width: 100%; max-width: 200px; height: 30px; align-items: center;}
-.origin-image {width: 100%; max-width: 320px; margin: 0; flex-shrink: 0;}
+
 
     
 
