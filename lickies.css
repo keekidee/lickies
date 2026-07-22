@@ -2,7 +2,7 @@
 
 lickies font styles */
 
-body { padding-top:120px; margin: 20px; font-family: 'Fredoka One', cursive; background-color: #ece5d5; cursor: pointer;}
+body { padding-top:120px; margin: 20px; font-family: 'Fredoka One', cursive; background-color: #ece5d5;}
  h1 { text-align: center; font-family: 'Bagel Fat One', cursive; font-size:clamp(2rem,5vw,3.5rem); color: #eea8a8;}
  h2 { color: #72bc76; font-size: 36px; text-align: center; }
  h3 {text-align: center; margin: 20px 0; color: #72bc76;font-size: 30px}
