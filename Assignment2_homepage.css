@@ -2,24 +2,20 @@
 
 #logo1{width: 600px; height: 348.75px; 
     top: 50%; left: 50%;
-    transform: translate(0%, -23%); 
-animation:bounce3 5s infinite;}
+    transform: translate(0%, -23%); }
 /* top and left determnines the position of the element,
 since the elemnt is not positioned absolutely,
  it doesnt overlap the text so i used transform to move the position. */
-/* logo bounces to a animation made below */
 
 html{ overflow-y: scroll; }
 /* to determine the vertical scroll behavior */
 
 body{font-family: 'Fredoka One', cursive; 
   background-color: #ece5d5; overflow-x: hidden;
-  -webkit-user-select: none;
-    -moz-user-select: none;  
-    -ms-user-select: none;   }
+user-select: none;   }
     /* disables the ability to select elements and images on the webpage */
   /* overflow x is hidden to disable user from horizontally scrolling */
- h1{ text-align: center; font-family: 'Bagel Fat One'; font-size:clamp(1rem,4vw,3rem);}
+ h1{ text-align: center; font-family: 'Bagel Fat One'; font-size:clamp(1rem,4vw,3rem); }
  /* text align aligns the text to the center */
 
  nav{ background-color: #f7d9d9; 
@@ -69,7 +65,7 @@ nav a:hover { color: #eea8a8; font-size: 1.1em;
  .header { text-align: center; margin-top: 20px;font-size: 4em; color: #cc7f7f; 
   text-shadow: 2px 2px #f7d9d9; }
 
- .welcome { text-align: center; margin-top: 60px;font-size: 10em; color: #f4a8b8;;
+ .welcome { text-align: center; margin-top: 60px;font-size: 10em; color: #ff8495;
      text-shadow: 6px 8px #2c1605; }
      /* margin top is the margin at the top of the element */
      
@@ -147,52 +143,113 @@ nav a:hover { color: #eea8a8; font-size: 1.1em;
   #promotion:hover {transform: scale(1.005);}
 
 
-#podium {width: 1100px; height: 680px; 
+.podium-stage {
+  position: relative;
+  width: min(1100px, 90vw);
+  margin: 0 auto;
+  padding-top: 20px;
+}
+/* vw is based on screen width */
+
+#podium {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 24px;
+}
+
+.tops {
+  position: absolute;
+  z-index: 5;
+  object-fit: contain;
+  transition:  0.3s ease;
+  cursor: pointer;
   
-  display: block; margin: 0 auto; position: relative;
-   border-radius: 24px; 
-   box-shadow: 4px 16px 32px rgba(0, 0, 0, 0); 
-   transition: transform 0.3s ease;
-   
-  }
-  #podium:hover { transform: scale(1.005) ;
-  
-  }
+}
+/* object fit stops the images from stretching */
 
-  .tops { z-index: 5; 
-    border-radius: 10000000px 
- }
+#top1 {
+  height: 40%;
+  width: 40%;
+  left: 50%;
+  top: 54%;
+  margin-left: -20%;
+  margin-top: -20%;
+  animation: bounce-top1 3s infinite;
+}
 
-    #top1{height: 300px; width: 250px;top: 341%; left: 42%; position: absolute; transition: transform 0.3s ease;animation:bounce2 3s infinite }
-    #top2{height: 350px; width: 250px;top: 342%; left: 23%; position: absolute; transition: transform 0.3s ease;animation:bounce2 2.5s infinite }
-    #top3{height: 290px; width: 240px;top: 345%; left: 61%; position: absolute;transition: transform 0.3s ease;animation:bounce2 2.3s infinite }
-    #top4{height: 200px; width: 160px;top: 380%; left: 15%; position: absolute;transition: transform 0.3s ease; }
-    #top5{height: 170px; width: 160px;top: 383%; left: 40%;position:absolute;transition: transform 0.3s ease;  }
-    #top6{height: 220px; width: 180px;top: 378%; left: 60%;position:absolute;transition: transform 0.3s ease; }
-   /* messy code */
-   
-    @keyframes bounce2 {
-      0%, 100% {
-        transform: translateY(0%);
-      }
-      50% {
-        transform: translateY(5%);
-      }
-    }
+#top2 {
+  height: 50%;
+  width: 50%;
+  left: 26%;
+  top: 58%;
+  margin-left: -25%;
+  margin-top: -25%;
+  animation: bounce-top2 2.5s infinite;
+}
 
-    @keyframes bounce3 {
-      0%, 100% {
-        transform: translateY(-23%);
-      }
-      50% {
-        transform: translateY(-25%);
-      }
-    }
-/* so many bounces  */
-  #top1:hover, #top2:hover, #top3:hover,#top4:hover, #top5:hover,#top6:hover, .tops:hover{
-    animation:none;
-    transform: scale(1.2) translate(0%, -10%);
-      cursor: pointer;
-    
-  } 
+#top3 {
+  height: 40%;
+  width: 40%;
+  left: 76%;
+  top: 58%;
+  margin-left: -20%;
+  margin-top: -20%;
+  animation: bounce-top3 2.3s infinite;
+}
+
+#top4 {
+  height: 30%;
+  width: 30%;
+  left: 10%;
+  top: 93%;
+  margin-left: -15%;
+  margin-top: -15%;
+
+}
+
+#top5 {
+  height: 25%;
+  width: 25%;
+  left: 43%;
+  top: 94%;
+  margin-left: -12.5%;
+  margin-top: -12.5%;
+}
+
+#top6 {
+  height: 32%;
+  width: 32%;
+  left: 72%;
+  top: 92%;
+  margin-left: -16%;
+  margin-top: -16%;
+}
+
+@keyframes bounce-top1 {
+  0%, 100% { top: 64%; }
+  50% { top: calc(64% - 8px); }
+}
+
+@keyframes bounce-top2 {
+  0%, 100% { top: 68%; }
+  50% { top: calc(68% - 8px); }
+}
+
+@keyframes bounce-top3 {
+  0%, 100% { top: 68%; }
+  50% { top: calc(68% - 8px); }
+}
+
+#top1:hover,
+#top2:hover,
+#top3:hover,
+#top4:hover,
+#top5:hover,
+#top6:hover {
+  filter: brightness(1.1);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 
