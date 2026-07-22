@@ -30,6 +30,7 @@ nav a:hover
  { color: #eea8a8; font-size: 1.1em; text-decoration: underline; transition: transform 0.3s ease;background-color: #ffcfcf; border-radius: 10px; padding: 5px 10px; }
 .nav-links {
    display: flex; list-style: none; gap: 45px; margin: 0; padding: 0; }
+
  /*DE LEON OLSEN PHILIP CASIL, 261056B */
 
 .accordion {
@@ -37,6 +38,10 @@ nav a:hover
   width: 60px auto;
 }
 
+/* width: 80% gives li a wrapper 80% of parent container */
+/*margin:20px, 20px of vertical space, auto makes the li center automatically */
+/*box shadow syntax is: right, bottom, blur radius (how soft the edge of the shadow is), spread radius (positive value shadow spread out,
+ negative value shadow smaller than element, rgba is the color+transparency of element */
 .accordion li{
 list-style: none;
 width:80%;
@@ -81,6 +86,7 @@ input[type="radio"] {
 }
 
 /* hides the content */
+/* it collapses the box to zero height and clips anything inside it */
 .accordion .content {
     color: #555;
     padding: 0 0;
