@@ -1,29 +1,75 @@
 <!-- Author: melanie tay min ling, 261291W. -->
-<!-- ^^^ Required at the top of every HTML file in your project! -->
 
 <!DOCTYPE html>
 <html lang="en">
+ <header class="header">
+    <!-- logo helped generated using AI -->
+    
+    <img src="images/lickies-logo.png" alt="Lickies Logo" class="logo">
+        
+    
+        <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="productcatalogue.html">MENU</a></li>
+            <li><a href="orderform.html">ORDER</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="feedback.html">FEEDBACK</a></li>
+            <li><a href="contactus.html">CONTACT US</a></li>
+        </ul>
+    </nav>   
+    </header>
+
+
 <head>
     <meta charset="UTF-8">
     <title>Lickies' Catalogue</title>
 
     <!-- css style sheet done by kira -->
+     <!--gallery item code taken from w3schools and ai assisted for the gallery item, bestsellers, flavours, toppings menu image display-->
     <style>
-        table       { border-collapse: collapse; }
+        table       { border-collapse: collapse; margin: 0 auto;}
         th, td      { border: 1px solid #444; padding: 8px; }
-        th          { background-color: #f7c873; }
+        th          { background-color: #f8a0b3; }
         caption     { font-weight: bold; padding: 6px; }
+     .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+        .gallery-item {
+    width: 590px;      
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    background: transparent;
+    transition: 0.3s;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;    
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
+}
+
+.desc {
+    padding: 5px;
+    font-size: 23px;
+}
     </style>
-        <!-- Import Fredoka One from Google Fonts -->
+        <!-- Import Fredoka One and Bagel Fat One from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-        <!-- favicon generated using AI (chat GPT)-->
-    <link rel="icon" type="image/x-icon" href="images/lickies favicon.png">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="lickies.css">
 </head>
 <body>
 
-    <h1>Lickies's Product Catalogue!</h1>
+    <h1>
+        <element class="brush-heading2">Lickies' Product Catalogue!</h1></element>
     <p>Welcome to the world of exceptional flavours and toppings.</p>
 
     <!-- idkkk -->
@@ -56,105 +102,186 @@
 
     <!-- images used are ai-generated -->
     <h2>Our Bestsellers</h2>
-    <p>insert phrase</p>
-    <table>
-        <tr>
-            <th scope="col">Photo</th>
-            <th scope="col">Product</th>
-        </tr>
-        <tr>
-            <td><img src="https://takestwoeggs.com/wp-content/uploads/2021/04/Brown-Sugar-Milk-Tea-Boba-Recipe-Takestwoeggs-Easy-Asian-Inspired-Recipes-sq.jpg" alt="Brown Sugar Boba Milk" width="100"></td>
-            <td>Thai Milk Tea</td>
-        </tr>
-        <tr>
-            <td><img src="https://takestwoeggs.com/wp-content/uploads/2021/04/Brown-Sugar-Milk-Tea-Boba-Recipe-Takestwoeggs-Easy-Asian-Inspired-Recipes-sq.jpg" alt="Brown Sugar Boba Milk" width="100"></td>
-            <td>Matcha and Strawberry</td>
-        </tr>
-        <tr>
-            <td><img src="https://takestwoeggs.com/wp-content/uploads/2021/04/Brown-Sugar-Milk-Tea-Boba-Recipe-Takestwoeggs-Easy-Asian-Inspired-Recipes-sq.jpg" alt="Brown Sugar Boba Milk" width="100"></td>
-            <td>Biscoff and Banana</td>
-        </tr>
-        <tr>
-            <td><img src="https://takestwoeggs.com/wp-content/uploads/2021/04/Brown-Sugar-Milk-Tea-Boba-Recipe-Takestwoeggs-Easy-Asian-Inspired-Recipes-sq.jpg" alt="Brown Sugar Boba Milk" width="100"></td>
-            <td>Cinnamon and Coffee</td>
-        </tr>
-        <tr>
-            <td><img src="https://takestwoeggs.com/wp-content/uploads/2021/04/Brown-Sugar-Milk-Tea-Boba-Recipe-Takestwoeggs-Easy-Asian-Inspired-Recipes-sq.jpg" alt="Brown Sugar Boba Milk" width="100"></td>
-            <td>Tiramisu</td>
-        </tr>
-    </table>
+<p>Our customers' all-time favourite ice cream flavours.</p>
+
+<div class="gallery">
+ <!-- used ai to assist with descriptions -->
+
+    <div class="gallery-item">
+        <img src="images/menu/mangothaimilktea.jpg" alt="Mango Thai Milk Tea">
+        <div class="desc">Aromatic Thai Milk Tea with a burst of Mango.</div>
+        <div class="desc">Contains Dairy.</div>
+    </div>
+ 
+    <div class="gallery-item">
+        <img src="images/menu/mintbrownie.jpg" alt="Mint Brownie">
+        <div class="desc">Creamy Mint meets Rich Chocolate-y finish.</div>
+        <div class="desc">Contains Dairy, Soy, and Gluten.</div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="images/menu/biscoffbanana.jpg" alt="Biscoff and Banana">
+        <div class="desc">Classic Banana elevated by Sweet Banana.</div>
+        <div class="desc">Contains Dairy, Gluten, and Soy.</div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="images/menu/pbnj.jpg" alt="PB and J">
+        <div class="desc">Creamy Peanut Butter swirled with sweet jam.</div>
+        <div class="desc">Contains Dairy and Peanuts.</div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="images/menu/cookiesncream.jpg" alt="Cookies and Cream">
+        <div class="desc">Rich, Creamy Ice Cream packed with Chocolate Crunch.</div>
+        <div class="desc">Contains Dairy, Gluten, and Soy.</div>
+    </div>
+
+        <div class="gallery-item">
+        <img src="images/menu/strawberrycheesecake.jpg" alt="Strawberry Cheesecake">
+        <div class="desc">Strawberry swirl with rich cheesecake-inspired creaminess.</div>
+        <div class="desc">Contains Dairy.</div>
+    </div>
+
+</div>
     
     <h2>Our Flavours</h2>
-    <p>insert phrase</p>
-    <table>
-        <tr>
-            <th scope="col">Photo</th>
-            <th scope="col">Product</th>
-        </tr>
-        <tr>
-            <td><img src="https://takestwoeggs.com/wp-content/uploads/2021/04/Brown-Sugar-Milk-Tea-Boba-Recipe-Takestwoeggs-Easy-Asian-Inspired-Recipes-sq.jpg" alt="Brown Sugar Boba Milk" width="100"></td>
-            <td>Vanilla Strawberry Milkshake</td>
-        </tr>
-        <tr>
-            <td><img src="https://tyberrymuch.com/wp-content/uploads/2022/07/taro-milk-tea-recipe-1.jpg" alt="Taro Milk Tea" width="100"></td>
-            <td>Matcha and Cherry</td>
-        </tr>
-        <tr>
-            <td><img src="https://tyberrymuch.com/wp-content/uploads/2022/07/taro-milk-tea-recipe-1.jpg" alt="Taro Milk Tea" width="100"></td>
-            <td>Strawberry Cheesecake</td>
-        </tr>
-        <tr>
-            <td><img src="https://tyberrymuch.com/wp-content/uploads/2022/07/taro-milk-tea-recipe-1.jpg" alt="Taro Milk Tea" width="100"></td>
-            <td>Pistachio and Honeycomb Crunch</td>
-        </tr>
-        <tr>
-            <td><img src="https://tyberrymuch.com/wp-content/uploads/2022/07/taro-milk-tea-recipe-1.jpg" alt="Taro Milk Tea" width="100"></td>
-            <td>Cookies n Cream</td>
-        </tr>
-        <tr>
-            <td><img src="https://tyberrymuch.com/wp-content/uploads/2022/07/taro-milk-tea-recipe-1.jpg" alt="Taro Milk Tea" width="100"></td>
-            <td>Mixed Berries</td>
-        </tr>
-    </table>
+<p>Choose from our delicious handcrafted ice cream flavours.</p>
+
+<div class="gallery">
+
+    <div class="gallery-item">
+        <img src="images/menu/whitepeachyuzu.jpg" alt="White Peach and Yuzu">
+        <div class="desc">Sweet, creamy, and refreshingly citrusy.</div>
+        <div class="desc">Contains Dairy.</div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="images/menu/cherrynjasmine.jpg" alt="Cherry Jasmine">
+        <div class="desc">Luscious cherry sweetness with a subtle floral touch.</div>
+        <div class="desc">Contains Dairy.</div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="images/menu/strawberrymatcha.jpg" alt="Strawberry Matcha">
+        <div class="desc">A classic favourite turned into a frozen treat.</div>
+        <div class="desc">Contains Dairy.</div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="images/menu/lavenderhoneycomb.jpg" alt="Lavender Honeycomb">
+        <div class="desc">A smooth blend of fragrant lavender and golden honey sweetness.</div>
+        <div class="desc">Contains Dairy.</div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="images/menu/tiramisu.jpg" alt="Tiramisu">
+        <div class="desc">Coffee lovers’ dream with a creamy dessert twist.</div>
+        <div class="desc">Contains Dairy.</div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="images/menu/applewoodberries.jpeg" alt="Apple Wood and Berries">
+        <div class="desc">A refined blend of ripe berries and delicate smoky depth.</div>
+        <div class="desc">Contains Dairy.</div>
+    </div>
+
+</div>
 
     <h2>Our Toppings</h2>
-    <p>insert phrase</p>
-    <table>
-        <tr>
-            <th scope="col">Photo</th>
-            <th scope="col">Product</th>
-        </tr>
-        <tr>
-            <td><img src="https://takestwoeggs.com/wp-content/uploads/2021/04/Brown-Sugar-Milk-Tea-Boba-Recipe-Takestwoeggs-Easy-Asian-Inspired-Recipes-sq.jpg" alt="Brown Sugar Boba Milk" width="100"></td>
-            <td>Vanilla Strawberry Milkshake</td>
-        </tr>
-        <tr>
-            <td><img src="https://tyberrymuch.com/wp-content/uploads/2022/07/taro-milk-tea-recipe-1.jpg" alt="Taro Milk Tea" width="100"></td>
-            <td>Matcha and Cherry</td>
-        </tr>
-        <tr>
-            <td><img src="https://tyberrymuch.com/wp-content/uploads/2022/07/taro-milk-tea-recipe-1.jpg" alt="Taro Milk Tea" width="100"></td>
-            <td>Strawberry Cheesecake</td>
-        </tr>
-        <tr>
-            <td><img src="https://tyberrymuch.com/wp-content/uploads/2022/07/taro-milk-tea-recipe-1.jpg" alt="Taro Milk Tea" width="100"></td>
-            <td>Pistachio and Honeycomb Crunch</td>
-        </tr>
-        <tr>
-            <td><img src="https://tyberrymuch.com/wp-content/uploads/2022/07/taro-milk-tea-recipe-1.jpg" alt="Taro Milk Tea" width="100"></td>
-            <td>Cookies n Cream</td>
-        </tr>
-        <tr>
-            <td><img src="https://tyberrymuch.com/wp-content/uploads/2022/07/taro-milk-tea-recipe-1.jpg" alt="Taro Milk Tea" width="100"></td>
-            <td>Mixed Berries</td>
-        </tr>
-    </table>
+<p>Finish off with your favourite toppings.</p>
 
+<div class="gallery">
+
+    <div class="gallery-item">
+        <img src="images/menu/strawberry.jpg" alt="Strawberry Drizzle">
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="images/menu/chocolate.jpg" alt="Chocolate Drizzle">
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="images/menu/caramel.jpg" alt="Caramel Drizzle">
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="images/menu/honey.jpg" alt="Honey Drizzle">
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="images/menu/marshmallows.jpg" alt="Marshmallow Sprinkles">
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="images/menu/chocolatesprinkles.jpg" alt="Chocolate Sprinkles">
+       <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="images/menu/crushedpeanuts.jpg" alt="Crushed Peanuts">
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="images/menu/rainbowsprinkles.jpg" alt="Rainbow Sprinkles">
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+    </div>
+
+     <div class="gallery-item">
+        <img src="images/menu/poppingcandy.jpg" alt="Popping Candy">
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="images/menu/poppingpearls.jpg" alt="Popping Pearls">
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="images/menu/freezedriedfruitmix.jpg" alt="Freeze Dried Fruit Mix">
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+    </div>
+
+        <div class="gallery-item">
+        <img src="images/menu/crushedicecreamcones.jpg" alt="Crushed Ice Cream Cones">
+        <div class="desc">phrase</div>
+        <div class="desc">allergens</div>
+    </div>
+
+</div> <br>
 
 <button type="button"
         onclick="window.location.href='orderform.html'">
     Interested? Order now!
 </button>
+
+ <!-- footer done by kira -->
+ <hr>
+<div class="footer">
+     <p>📍 Singapore</p>
+    <p>📧 lickies.icecream@gmail.com</p>
+    <p>☎ +65 1234 5678</p>
+    <p style="text-align: center;">&copy; 2023 Lickies. All rights reserved.</p>
+</div>
+
+<button onclick="window.location.href='credits.html'" class="button-container">Credits</button>
  
 </body>
 </html>

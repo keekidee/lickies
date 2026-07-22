@@ -1,27 +1,51 @@
- 
+/* DE LEON OLSEN PHILIP CASIL, 261056B */
  body {margin: 0; padding: 0; background-color: #ece5d5; font-family:'Fredoka One', cursive;  }
  h1 {color: #cc7f7f;
         text-align:center;
     text-decoration:underline;
  }
-  
- 
-/* Sets the size of the wrapper */
+
+ /*not mine*/
+ /*Header*/
+ .header 
+ {position: fixed; top: 0; left: 0;
+    width: 100%; display: flex; height: 80px ; align-items: center; justify-content: space-between; 
+    background-color: #f7d9d9; padding: 10px 40px; box-shadow: 0 2px 4px rgba(0,0,0,.1); z-index: 1000;}
+
+.logo 
+    {width: 160px;
+    height: auto;}
+
+nav 
+{background-color: #f7d9d9; display: flex; flex:1; justify-content:flex-end;justify-content: space-between; 
+    align-items: center; padding: 10px 20px; font-size: 1.2em; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); z-index: 1000; border-radius: 12px;
+    height: auto;}
+nav ul 
+{ margin: 0px; padding: 0;} 
+nav li{
+    margin-right: 40px; font-size:larger}
+nav a 
+{ text-decoration: none; color: #cc7f7f; font-weight: bold;}
+nav a:hover
+ { color: #eea8a8; font-size: 1.1em; text-decoration: underline; transition: transform 0.3s ease;background-color: #ffcfcf; border-radius: 10px; padding: 5px 10px; }
+.nav-links {
+   display: flex; list-style: none; gap: 45px; margin: 0; padding: 0; }
+
+ /*DE LEON OLSEN PHILIP CASIL, 261056B */
+
 .accordion {
-  margin: 60px;
-  width: 600px auto;
+  margin: 60px auto;
+  width: 600px ;
 }
-        
-    
 
 /* width: 80% gives li a wrapper 80% of parent container */
 /*margin:20px, 20px of vertical space, auto makes the li center automatically */
 /*box shadow syntax is: right, bottom, blur radius (how soft the edge of the shadow is), spread radius (positive value shadow spread out,
  negative value shadow smaller than element, rgba is the color+transparency of element */
-
-.accordion li {
+.accordion li{
 list-style: none;
 width:80%;
+margin-bottom: 4px;
 margin:20px auto;
 padding:12px 20px;
 border-radius:8px;
@@ -29,7 +53,7 @@ background: #fdf8ee92;
 box-shadow: 10px 10px 20px -2px rgba(139, 111, 71, 0.182),
             -6px -6px 10px -1px rgba(255, 253, 245, 0.3)
 }
-
+/* Targets the label headers!! if direct child combinator not added all the labels will be styled the same! */
 /* targets direct child of li!!!! */
 /* main thing: increases size for customer support */
 .accordion li > label{
@@ -62,6 +86,7 @@ input[type="radio"] {
 }
 
 /* hides the content */
+/* it collapses the box to zero height and clips anything inside it */
 .accordion .content {
     color: #555;
     padding: 0 0;
@@ -71,11 +96,16 @@ input[type="radio"] {
     transition: max-height 0.3s ease, padding 0.3s ease;
 }
 
+
+/*input[type="radio"] find a radio button inside .accordion , only when ::checked*/
+/* When this radio button is checked, find its sibling label, and then find the sibling AFTER that label  the .content and apply these styles to it. */
+
 .accordion input[type="radio"]:checked + label + .content {
     max-height: none;
     padding: 10px 10px 20px;
 }
 
+/*Flips the icon */
 .accordion input[type="radio"]:checked + label:before {
 content:'-';
 }
@@ -87,5 +117,4 @@ details {
 details > p{
     font-weight:bold;
 }
-
 
