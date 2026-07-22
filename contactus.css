@@ -1,0 +1,91 @@
+ 
+ body {margin: 0; padding: 0; background-color: #ece5d5; font-family:'Fredoka One', cursive;  }
+ h1 {color: #cc7f7f;
+        text-align:center;
+    text-decoration:underline;
+ }
+  
+ 
+/* Sets the size of the wrapper */
+.accordion {
+  margin: 60px;
+  width: 600px auto;
+}
+        
+    
+
+/* width: 80% gives li a wrapper 80% of parent container */
+/*margin:20px, 20px of vertical space, auto makes the li center automatically */
+/*box shadow syntax is: right, bottom, blur radius (how soft the edge of the shadow is), spread radius (positive value shadow spread out,
+ negative value shadow smaller than element, rgba is the color+transparency of element */
+
+.accordion li {
+list-style: none;
+width:80%;
+margin:20px auto;
+padding:12px 20px;
+border-radius:8px;
+background: #fdf8ee92;
+box-shadow: 10px 10px 20px -2px rgba(139, 111, 71, 0.182),
+            -6px -6px 10px -1px rgba(255, 253, 245, 0.3)
+}
+
+/* targets direct child of li!!!! */
+/* main thing: increases size for customer support */
+.accordion li > label{
+display: flex;
+align-items: center;
+padding:10px;
+font-size: 18px;
+font-weight:500;
+cursor:pointer;
+}
+.accordion input::placeholder,
+.accordion textarea::placeholder {
+    font-family: 'Fredoka-one' , cursive;
+}
+
+/* before: is a pseudo element*/
+/* .accordion -> looks at ul accordian class.
+.accordion li -> looks inside each li, its direct children
+, in order, are: <input>, <label>, <br>, <br>, <div class="content"> */
+.accordion li > label:before{
+    content: '+';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight:600;
+}
+
+input[type="radio"] {
+    display:none;
+    padding: 10px 0px;
+}
+
+/* hides the content */
+.accordion .content {
+    color: #555;
+    padding: 0 0;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion input[type="radio"]:checked + label + .content {
+    max-height: none;
+    padding: 10px 10px 20px;
+}
+
+.accordion input[type="radio"]:checked + label:before {
+content:'-';
+}
+
+details {
+    margin:4px; 
+}
+
+details > p{
+    font-weight:bold;
+}
+
+
