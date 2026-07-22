@@ -20,7 +20,7 @@ body { padding-top:120px; margin: 20px; font-family: 'Fredoka One', cursive; bac
     text-decoration-color: #eea8a8;
     text-decoration-thickness: 4px;}
  
- /* Navigation bar styles, logo and header */
+ /* Navigation bar styles, logo and header created with reference to Bro Code "How to create a CSS navigation bar in 6 minutes!" 🧭*/
 
 header 
     {position: fixed; top: 0; left: 0; width: 100%; display: flex; height: 80px; align-items: center;  box-sizing: border-box; 
@@ -59,7 +59,7 @@ nav a:hover { color: #eea8a8; transform: scale(1.05); text-decoration: underline
         align-items: center;
         gap: 20px;
     }}
-/*text box (card) styles */
+/*text box (card) styles Made with reference to W3 schools */
 
  .card {margin-top: auto; margin: 11px 0px;
      border-radius: 12px; box-shadow: 2px 2px 4px #1b1a1a;
@@ -78,14 +78,14 @@ nav a:hover { color: #eea8a8; transform: scale(1.05); text-decoration: underline
 
 }
 
-/*image*/
+/*image- made with reference to Bro code and W3 schools*/
 
 .image-container { width: 200px; height: 200px; border: 1px solid #f7d9d9;}
 .image-container img {width: 100% ;height: 100%; object-fit: cover; object-position: 80% 100%; }
 .origin-text {flex: 1;}
 .origin-image img {width: 100%; max-width: 320px; height: auto; object-fit: cover; display: block;  border-radius: 24px; border: 5px solid #f7d9d9; height: auto;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15); transition: transform 0.3s ease;}
-
+.origin-image {width: 100%; max-width: 320px; margin: 0; flex-shrink: 0;}
 .origin-image img:hover { transform: scale(1.03);}
  
 /* Code generated using AI (chat GPT) to make the content row and card responsive */
