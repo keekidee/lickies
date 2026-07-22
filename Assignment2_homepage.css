@@ -19,7 +19,7 @@ body{font-family: 'Fredoka One', cursive;
     -ms-user-select: none;   }
     /* disables the ability to select elements and images on the webpage */
   /* overflow x is hidden to disable user from horizontally scrolling */
- h1{ text-align: center; color: #eea8a8; font-family: 'Bagel Fat One'; font-size:clamp(1rem,4vw,3rem);}
+ h1{ text-align: center; font-family: 'Bagel Fat One'; font-size:clamp(1rem,4vw,3rem);}
  /* text align aligns the text to the center */
 
  nav{ background-color: #f7d9d9; 
