@@ -15,7 +15,7 @@ body{font-family: 'Fredoka One', cursive;
 user-select: none;   }
     /* disables the ability to select elements and images on the webpage */
   /* overflow x is hidden to disable user from horizontally scrolling */
- h1{ text-align: center; color: #eea8a8;}
+ h1{ text-align: center; font-family: 'Bagel Fat One'; font-size:clamp(1rem,4vw,3rem); }
  /* text align aligns the text to the center */
 
  nav{ background-color: #f7d9d9; 
@@ -156,7 +156,6 @@ nav a:hover { color: #eea8a8; font-size: 1.1em;
   height: auto;
   display: block;
   border-radius: 24px;
-  box-shadow: 4px 16px 32px rgba(0, 0, 0, 0);
 }
 
 .tops {
