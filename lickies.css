@@ -68,13 +68,9 @@ nav a:hover { color: #eea8a8; transform: scale(1.05); text-decoration: underline
     gap: 30px; background-color: #f7d9d9; padding: 30px;
     margin: 60px 0; border-radius: 20px; box-shadow: 2px 2px 6px rgba(0,0,0,0.2);}
 
-/* code generated with the help of AI to make page compatable on phones */
-@media (max-width:768px){
-
-    .card{
-        flex-direction:column;
-        text-align:center;
-    }
+@media (max-width:600px){
+    nav a {display: block; margin: 6px 0;}
+    .card {width: 100%; text-align:center;}
 
 }
 
