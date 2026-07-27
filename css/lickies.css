@@ -51,7 +51,7 @@ nav a:hover { color: #eea8a8; transform: scale(1.05); text-decoration: underline
 
     nav {
         width: 100%;
-        justify-content: center;
+        justify-content: center; padding: 1%;
     }
 
     .nav-links {
