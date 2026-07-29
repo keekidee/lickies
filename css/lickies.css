@@ -55,7 +55,8 @@ nav a:hover { color: #eea8a8; transform: scale(1.05); text-decoration: underline
     }
 
     .nav-links {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: nowrap;
         align-items: center;
         gap: 20px;
     }}
@@ -69,7 +70,7 @@ nav a:hover { color: #eea8a8; transform: scale(1.05); text-decoration: underline
     margin: 60px 0; border-radius: 20px; box-shadow: 2px 2px 6px rgba(0,0,0,0.2);}
 
 @media (max-width:600px){
-    nav a {display: block; margin: 6px 0;}
+    nav a {display: inline-block; margin: 6px 0;}
     .card {width: 100%; text-align:center;}
 
 }
