@@ -77,7 +77,7 @@
             <br>
 
             <label for="Date">Date(8am to 6pm):</label><br>
-            <input type="date" name="Date" id="Date">
+            <input type="date" name="Date" id="Date" >
             <br>
 
 
@@ -203,6 +203,19 @@
         </div>    
     </div>
     </form>
+    <script>
+        // 1. Grab everything after the ? in the address bar
+        const data = new URLSearchParams(window.location.search);
+
+        // 2. Pull out the values by their form name= (with safe fallbacks)
+        const flavour = data.get("flavour")
+
+        
+        if (flavour) {
+            document.getElementById("first").value = flavour;
+            document.getElementById("Second").value = flavour;
+          document.getElementById("Third").value = flavour;}
+    </script>
     <hr>
     <div class="footer">
         <p>📍 Singapore</p>
