@@ -1,6 +1,6 @@
 /* Full Name:Jiao Wenbo, Admin no. :261393E */
 
-#logo1{width: 600px; height: 348.75px; 
+#logo1{width: min( 50%, 90vw); height: auto; 
     top: 50%; left: 50%;
     transform: translate(0%, -23%); }
 /* top and left determnines the position of the element,
@@ -15,7 +15,7 @@ body{font-family: 'Fredoka One', cursive;
 user-select: none;   }
     /* disables the ability to select elements and images on the webpage */
   /* overflow x is hidden to disable user from horizontally scrolling */
- h1{ text-align: center; font-family: 'Bagel Fat One'; font-size:clamp(1rem,4vw,3rem); }
+ h1{ text-align: center; font-family: 'Bagel Fat One'; font-size:clamp(3rem,12vw,9rem); }
  /* text align aligns the text to the center */
 
  nav{ background-color: #f7d9d9; 
@@ -23,8 +23,8 @@ user-select: none;   }
   justify-content:
    space-between; 
    align-items: center;
-    padding: 10px 20px;height: 60px;
-     font-size: 1.2em;
+    padding: 2% 2%;height: 5%;
+     font-size:clamp(0.6rem,2.4vw,1.8rem);
    position:fixed; top:0; left:0;
     width:100%; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     z-index: 10; }
@@ -62,10 +62,10 @@ nav a:hover { color: #eea8a8; font-size: 1.1em;
  .banner:hover { transform: scale(1.1); transition: transform 0.3s ease;
    box-shadow: 8px 16px 32px rgba(255, 198, 198, 0.5); cursor: pointer; 
    border-color: #ffcfcf; border-width: 3px; border-style: solid; }
- .header { text-align: center; margin-top: 20px;font-size: 4em; color: #cc7f7f; 
+ .header { text-align: center; margin-top: 20px;font-size:clamp(2rem,4vw,6rem); color: #cc7f7f; 
   text-shadow: 2px 2px #f7d9d9; }
 
- .welcome { text-align: center; margin-top: 60px;font-size: 10em; color: #ff8495;
+ .welcome { text-align: center; margin-top: 60px; color: #ff8495;
      text-shadow: 6px 8px #2c1605; }
      /* margin top is the margin at the top of the element */
      
@@ -74,8 +74,8 @@ nav a:hover { color: #eea8a8; font-size: 1.1em;
      /* white-space: nowrap; keep the banner images on a single line */
 
 .scrolling-banner img {
-  width: 864px;
-  height: 446.4px;
+  width: min(900px, 90vw);
+  height: auto;
   display: inline-block;
   animation: scroll 20s linear infinite;
   margin-right: 20px; }
@@ -95,8 +95,8 @@ nav a:hover { color: #eea8a8; font-size: 1.1em;
 
  
   #promotion {
-    width: 1100px;
-    height: 600px;
+    width: min(900px, 90vw);
+    height: auto;
     display: block;
     margin: 0 auto;
     position: relative;
@@ -108,9 +108,11 @@ nav a:hover { color: #eea8a8; font-size: 1.1em;
    /* display block makes it so its solid */
   #promotion-button {
     display: block;
-    margin: -60px auto;
-    padding: 30px 40px;
-    font-size: 3em;
+    margin: -60px auto ;
+    padding: clamp(14px, 3vw, 30px) clamp(18px, 4vw, 40px);
+  font-size: clamp(1.1rem, 2.8vw, 3rem);
+  width: fit-content;
+   max-width: min(90vw, 420px);
     background-color: #e24949;
     color: #f2e3e3;
 
@@ -120,9 +122,17 @@ nav a:hover { color: #eea8a8; font-size: 1.1em;
     font-family: 'Fredoka One', cursive;
     transform: translate(0%, -150%);
     animation: bounce 1s infinite;
-    border: 13px solid #8a2424; }
+    border: clamp(6px, 1.2vw, 13px) solid #8a2424; }
 /* bounce animation code is below */
 
+
+@media (max-width: 768px) {
+  #promotion-button {
+    transform: translateY(-180%);
+    margin-top: 10px;
+    animation: none;
+  }
+}
   #promotion-button:hover {
     background-color: #f03838;
     border: 13px solid #b81f1f;
@@ -176,6 +186,7 @@ nav a:hover { color: #eea8a8; font-size: 1.1em;
   margin-left: -20%;
   margin-top: -20%;
   animation: bounce-top1 3s infinite;
+  z-index: 7;
 }
 
 #top2 {
