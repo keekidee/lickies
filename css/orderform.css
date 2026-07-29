@@ -74,3 +74,15 @@ body{
   height:auto;
   vertical-align:middle;
 }
+
+.notice{
+margin: 20px auto;
+padding: 12px 15px; max-width: 420px;
+background-color: #f7d9d9;
+border: 1px solid #eea8a8;
+border-radius: 10px;
+}
+
+strong{
+  color: #5b935e;
+}
