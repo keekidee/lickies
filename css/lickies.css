@@ -23,19 +23,19 @@ body { padding-top:120px; margin: 20px; font-family: 'Fredoka One', cursive; bac
  /* Navigation bar styles, logo and header created with reference to Bro Code "How to create a CSS navigation bar in 6 minutes!" 🧭*/
 
 header 
-    {position: fixed; top: 0; left: 0; width: 100%; display: flex; height: 80px; align-items: center;  box-sizing: border-box; 
+    {position: fixed; top: 0; left: 0; width: 100%; display: flex; height: 80px; align-items: center;  box-sizing: border-box;  
     justify-content: space-between; background-color: #f7d9d9; padding: 10px 40px; box-shadow: 0 2px 4px rgba(0,0,0,.1); z-index: 1000;}
     
 .logo 
     {width: 160px; justify-content: flex-start;
     height: auto;}
 
-nav {background-color: #f7d9d9; display: flex; flex:1;
+nav {background-color: #f7d9d9; display: flex; flex:1; overflow: auto;  overflow-x: auto; overflow-y: hidden;
     align-items: center; padding: 10px 20px; font-size: clamp(0.9rem, 2vw, 1.2rem); box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); z-index: 1000; border-radius: 12px;
     height: auto;}
-nav ul {justify-content: space-evenly; align-items: center; margin: 0; padding: 0;width: 100%;} 
-nav li{ margin: 0;}
-nav a { text-decoration: none; color: #cc7f7f; font-weight: bold;}
+nav ul {justify-content: space-evenly; align-items: center; margin: 0; padding: 0;width: 100%; display: flex; white-space: nowrap;min-width: max-content; flex-wrap: nowrap;} 
+nav li{ margin: 0; flex-shrink: 0; }
+nav a { text-decoration: none; color: #cc7f7f; font-weight: bold; }
 /* nav a:hover created by Wenbo*/
 nav a:hover { color: #eea8a8; transform: scale(1.05); text-decoration: underline; transition: transform 0.3s ease;background-color: #ffcfcf; border-radius: 10px; padding: 5px 10px; }
 .nav-links { display: flex; list-style: none; gap: 45px;}
