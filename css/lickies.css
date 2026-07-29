@@ -1,11 +1,13 @@
 /* zakira roberta harris 261084W
    lickies font styles */
 
+/* can reuse the colour and style in elements */
 :root {
   --shadow: rgba(0, 0, 0, 0.1);
   --card-shadow: rgba(0, 0, 0, 0.2);
 }
 
+/* text styles, headers */
 body {
   margin: 20px;
   padding-top: 0;
@@ -47,7 +49,7 @@ figcaption {
 p {
   text-align: left;
 }
-
+/*underlining the text*/
 .brush-heading {
   text-decoration-line: underline;
   text-decoration-color: #f4a8b8;
@@ -60,7 +62,9 @@ p {
   text-decoration-thickness: 4px;
 }
 
-/* Navigation bar styles, logo and header created with reference to Bro Code "How to create a CSS navigation bar in 6 minutes!" 🧭 */
+/* Navigation bar styles, logo and header created with reference to Bro Code "How to create a CSS navigation bar in 6 minutes!" 🧭 
+Header contains the logo and nav bar, */
+
 header {
   width: 100%;
   display: flex;
