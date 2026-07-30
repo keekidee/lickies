@@ -42,174 +42,176 @@
     </nav>   
     </header>
 
-   <div class="form-box-big">
-        <div class="body">
-        <h1>
+    <div class="form-wrapper">
+    <div class="form-box-big">
+            <div class="body">
+            <h1>
+                
+
+                Order Form!
+                <img src="images/lickiesfavicon.png"
+                    alt="lickies ice cream icon"
+                    class="icon">
+
+            </h1>
+
+            <div class="notice">
+                <p>
+                    <small>If you selected a flavour from our <strong>New Flavours</strong> or
+                    <strong>Top Flavours</strong> section, we've automatically filled all
+                    three scoops with your chosen flavour for your convenience. Feel free
+                    to change any of the scoops if you'd like to customise your order!</small>
+                </p>
+                </div><br>
+
+
+
+            <form action="Thankyou_of.html" method="get">
+
+            
+                <label for="custname">Your name:</label><br>
+                <input type="text" name="custname" id="custname" 
+                    placeholder="e.g. Tan Wei" required>
+                <br>
+
+
+                <label for="email">E-mail:</label><br>
+                <input type="email" name="email" id="email" size="30"
+                    placeholder="you@example.com" required>
+                <br>
             
 
-            Order Form!
-             <img src="images/lickiesfavicon.png"
-                alt="lickies ice cream icon"
-                class="icon">
-
-        </h1>
-
-         <div class="notice">
-            <p>
-                <small>If you selected a flavour from our <strong>New Flavours</strong> or
-                <strong>Top Flavours</strong> section, we've automatically filled all
-                three scoops with your chosen flavour for your convenience. Feel free
-                to change any of the scoops if you'd like to customise your order!</small>
-            </p>
-            </div><br>
-
-
-
-        <form action="Thankyou_of.html" method="get">
-
-           
-            <label for="custname">Your name:</label><br>
-            <input type="text" name="custname" id="custname" 
-                placeholder="e.g. Tan Wei" required>
-            <br>
-
-
-            <label for="email">E-mail:</label><br>
-            <input type="email" name="email" id="email" size="30"
-                placeholder="you@example.com" required>
-            <br>
-           
-
-        
-            <label for="qty">How many scoops? (1–3):</label><br>
-            <input type="number" name="qty" id="qty" min="1" max="3" value="1">
-            <br>
-
-            <label for="Date">Date(8am to 6pm):</label><br>
-            <input type="date" name="Date" id="Date" >
-            <br>
-
-
-            <!-- ============================================================
-                ⭐ CHALLENGE: Datalist — a text box WITH suggestions.
-                TODO (a): add  list="flavours"  to the input below
-                TODO (b): under it, create:
-                    <datalist id="flavours">
-                        <option value="Taro">
-                        <option value="Matcha">
-                        <option value="Honeydew">
-                    </datalist>
-                The list id must match the input's list attribute!
-                ============================================================ -->
             
-            <label for="first">Flavour choice<br> 1st Scoop :</label><br>
-            <input type="text" name="choice" id="first" list="flavours-mandatory"><br>
-            <datalist id="flavours-mandatory">
-                <option value="White Peach & Yuzu">
-                <option value="Mint Brownie">
-                <option value="Cookies & Cream">
-                <option value="Applewood & Berries">
-                <option value="Mango Thai Milk Tea">
-                <option value="Cherry & Jasmine">
-                <option value="PB & J">
-                <option value="Biscoff & Banana">
-                <option value="Strawberry Matcha">
-                <option value="Lavender Honeycomb">
-                <option value="Tiramisu">
-                <option value="Strawberry Cheesecake">
-            </datalist><br>
+                <label for="qty">How many scoops? (1–3):</label><br>
+                <input type="number" name="qty" id="qty" min="1" max="3" value="1">
+                <br>
 
-            <label for="Second"> 2nd Scoop :</label><br>
-            <input type="text" name="choice2" id="Second" list="flavours-optional"><br>
-            <datalist id="flavours-optional">
-                <option value="White Peach & Yuzu">
-                <option value="Mint Brownie">
-                <option value="Cookies & Cream">
-                <option value="Applewood Berries">
-                <option value="Mango Thai Milk Tea">
-                <option value="Cherry & Jasmine">
-                <option value="PB & J">
-                <option value="Biscoff & Banana">
-                <option value="Strawberry Matcha">
-                <option value="Lavender Honeycomb">
-                <option value="Tiramisu">
-                <option value="Strawberry Cheesecake">
-                <option value="None">
-            </datalist><br>
-            <label for="Third"> 3rd Scoop:</label><br>
-            <input type="text" name="choice3" id="Third" list="flavours-optional"><br>
-            <datalist id="flavours-optional">
-                <option value="White Peach & Yuzu">
-                <option value="Mint Brownie">
-                <option value="Cookies & Cream">
-                <option value="Applewood Berries">
-                <option value="Mango Thai Milk Tea">
-                <option value="Cherry & Jasmine">
-                <option value="PB & J">
-                <option value="Biscoff & Banana">
-                <option value="Strawberry Matcha">
-                <option value="Lavender Honeycomb">
-                <option value="Tiramisu">
-                <option value="Strawberry Cheesecake">
-                <option value="None">
-            </datalist><br>
+                <label for="Date">Date(8am to 6pm):</label><br>
+                <input type="date" name="Date" id="Date" >
+                <br>
 
-            <label for="topping">Topping choice:</label><br>
-            <label><input type="checkbox"
-                name="Strawberry drizzle" value="yes"> Strawberry Drizzle</label><br>
-            <label><input type="checkbox"
-                name="Chocolate drizzle" value="yes"> Chocolate Drizzle</label><br>
-            <label><input type="checkbox"
-                name="Caramel drizzle" value="yes"> Caramel Drizzle</label><br>
-            <label><input type="checkbox"
-                name="Honey drizzle" value="yes"> Honey Drizzle</label><br>
-            <label><input type="checkbox"
-                name="Marshmallow" value="yes"> Marshmallow Sprinkles</label><br>
-            <label><input type="checkbox"
-                name="Chocolate sprinkles" value="yes"> Chocolate Sprinkles</label><br>
-            <label><input type="checkbox"
-                name="crushed peanuts" value="yes"> Crushed Peanuts</label><br>
-            <label><input type="checkbox"
-                name="Rainbow sprinkles" value="yes"> Rainbow Sprinkles</label><br>
-            <label><input type="checkbox"
-                name="Popping candy" value="yes"> Popping Candy</label><br>
-            <label><input type="checkbox"
-                name="popping pearl" value="yes"> Popping Pearl</label><br>
-            <label><input type="checkbox"
-                name="Freeze Dried Fruits Mix" value="yes"> Freeze Dried Fruits Mix</label><br>
+
+                <!-- ============================================================
+                    ⭐ CHALLENGE: Datalist — a text box WITH suggestions.
+                    TODO (a): add  list="flavours"  to the input below
+                    TODO (b): under it, create:
+                        <datalist id="flavours">
+                            <option value="Taro">
+                            <option value="Matcha">
+                            <option value="Honeydew">
+                        </datalist>
+                    The list id must match the input's list attribute!
+                    ============================================================ -->
+                
+                <label for="first">Flavour choice<br> 1st Scoop :</label><br>
+                <input type="text" name="choice" id="first" list="flavours-mandatory"><br>
+                <datalist id="flavours-mandatory">
+                    <option value="White Peach & Yuzu">
+                    <option value="Mint Brownie">
+                    <option value="Cookies & Cream">
+                    <option value="Applewood & Berries">
+                    <option value="Mango Thai Milk Tea">
+                    <option value="Cherry & Jasmine">
+                    <option value="PB & J">
+                    <option value="Biscoff & Banana">
+                    <option value="Strawberry Matcha">
+                    <option value="Lavender Honeycomb">
+                    <option value="Tiramisu">
+                    <option value="Strawberry Cheesecake">
+                </datalist><br>
+
+                <label for="Second"> 2nd Scoop :</label><br>
+                <input type="text" name="choice2" id="Second" list="flavours-optional"><br>
+                <datalist id="flavours-optional">
+                    <option value="White Peach & Yuzu">
+                    <option value="Mint Brownie">
+                    <option value="Cookies & Cream">
+                    <option value="Applewood Berries">
+                    <option value="Mango Thai Milk Tea">
+                    <option value="Cherry & Jasmine">
+                    <option value="PB & J">
+                    <option value="Biscoff & Banana">
+                    <option value="Strawberry Matcha">
+                    <option value="Lavender Honeycomb">
+                    <option value="Tiramisu">
+                    <option value="Strawberry Cheesecake">
+                    <option value="None">
+                </datalist><br>
+                <label for="Third"> 3rd Scoop:</label><br>
+                <input type="text" name="choice3" id="Third" list="flavours-optional"><br>
+                <datalist id="flavours-optional">
+                    <option value="White Peach & Yuzu">
+                    <option value="Mint Brownie">
+                    <option value="Cookies & Cream">
+                    <option value="Applewood Berries">
+                    <option value="Mango Thai Milk Tea">
+                    <option value="Cherry & Jasmine">
+                    <option value="PB & J">
+                    <option value="Biscoff & Banana">
+                    <option value="Strawberry Matcha">
+                    <option value="Lavender Honeycomb">
+                    <option value="Tiramisu">
+                    <option value="Strawberry Cheesecake">
+                    <option value="None">
+                </datalist><br>
+
+                <label for="topping">Topping choice:</label><br>
                 <label><input type="checkbox"
-                name="Crushed Ice Cream Cones" value="yes"> Crushed Ice Cream Cones</label><br>
-            
-            
-            
-            
-            
+                    name="Strawberry drizzle" value="yes"> Strawberry Drizzle</label><br>
+                <label><input type="checkbox"
+                    name="Chocolate drizzle" value="yes"> Chocolate Drizzle</label><br>
+                <label><input type="checkbox"
+                    name="Caramel drizzle" value="yes"> Caramel Drizzle</label><br>
+                <label><input type="checkbox"
+                    name="Honey drizzle" value="yes"> Honey Drizzle</label><br>
+                <label><input type="checkbox"
+                    name="Marshmallow" value="yes"> Marshmallow Sprinkles</label><br>
+                <label><input type="checkbox"
+                    name="Chocolate sprinkles" value="yes"> Chocolate Sprinkles</label><br>
+                <label><input type="checkbox"
+                    name="crushed peanuts" value="yes"> Crushed Peanuts</label><br>
+                <label><input type="checkbox"
+                    name="Rainbow sprinkles" value="yes"> Rainbow Sprinkles</label><br>
+                <label><input type="checkbox"
+                    name="Popping candy" value="yes"> Popping Candy</label><br>
+                <label><input type="checkbox"
+                    name="popping pearl" value="yes"> Popping Pearl</label><br>
+                <label><input type="checkbox"
+                    name="Freeze Dried Fruits Mix" value="yes"> Freeze Dried Fruits Mix</label><br>
+                    <label><input type="checkbox"
+                    name="Crushed Ice Cream Cones" value="yes"> Crushed Ice Cream Cones</label><br>
+                
+                
+                
+                
+                
 
-            <!-- ============================================================
-                TASK 5: Special requests + buttons.
-                TODO (a): add a <textarea name="notes" id="notes"
-                        rows="4" cols="40"></textarea> under the label
-                TODO (b): add a Submit and a Reset button at the bottom:
-                        <input type="submit" value="Place Order">
-                        <input type="reset"  value="Clear Form">
-                ============================================================ -->
-            <p><label for="notes">Special requests:</label></p>
-            <!-- TODO Task 5a: textarea here -->
-            <div class="textarea">
-                <textarea name="notes" id="notes" rows="7" cols="50"></textarea>
-            <div>
-        
-            <!-- TODO Task 5b: submit + reset buttons here -->
-            <p><label for="Donations">Donations($):</label></p>
-            <input type="number" name="donations" id="donations" min="1"
-            placeholder="e.g. $1.00">
+                <!-- ============================================================
+                    TASK 5: Special requests + buttons.
+                    TODO (a): add a <textarea name="notes" id="notes"
+                            rows="4" cols="40"></textarea> under the label
+                    TODO (b): add a Submit and a Reset button at the bottom:
+                            <input type="submit" value="Place Order">
+                            <input type="reset"  value="Clear Form">
+                    ============================================================ -->
+                <p><label for="notes">Special requests:</label></p>
+                <!-- TODO Task 5a: textarea here -->
+                <div class="textarea">
+                    <textarea name="notes" id="notes" rows="7" cols="50"></textarea>
+                <div>
+            
+                <!-- TODO Task 5b: submit + reset buttons here -->
+                <p><label for="Donations">Donations($):</label></p>
+                <input type="number" name="donations" id="donations" min="1"
+                placeholder="e.g. $1.00">
 
-            <p>
-            <button class="btn submit">Place Order</button>
-            <input type="reset"  value="Clear Form">
-            </p>
-        </form>
-        </div>    
+                <p>
+                <button class="btn submit">Place Order</button>
+                <input type="reset"  value="Clear Form">
+                </p>
+            </form>
+            </div>    
+        </div>
     </div>
     </form>
     <script>
