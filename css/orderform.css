@@ -77,7 +77,7 @@ body{
 }
 
 /*longer text box*/
-.textarea,input[type=text],input[type=email] {
+input[type=text],input[type=email] {
   width: 60%;
   box-sizing: border-box;
 }
