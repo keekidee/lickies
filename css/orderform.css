@@ -82,6 +82,13 @@ input[type=text],input[type=email] {
   box-sizing: border-box;
 }
 
+textarea {
+  max-width: 400px;
+  width: 60%
+  box-sizing: border-box;
+  resize: vertical; /* optional */
+}
+
 /*ice cream icon assisted by chatGPT(OpenAI) in resize using css
  Prompt:how to resize and align an image icon using CSS*/
 .icon{
