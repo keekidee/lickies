@@ -83,9 +83,7 @@ input[type=text],input[type=email] {
 }
 
 textarea {
-  max-width: 400px;
-  width: 60%
-  box-sizing: border-box; 
+  width: 100%
 }
 
 /*ice cream icon assisted by chatGPT(OpenAI) in resize using css
@@ -106,10 +104,4 @@ border-radius: 10px;
 
 strong{
   color: #5b935e;
-}
-
-@media (max-width: 768px) {
- nav {
-overflow-x: auto;
- }
 }
