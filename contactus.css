@@ -1,120 +1,48 @@
 /* DE LEON OLSEN PHILIP CASIL, 261056B */
- body {margin: 0; padding: 0; background-color: #ece5d5; font-family:'Fredoka One', cursive;  }
- h1 {color: #cc7f7f;
-        text-align:center;
-    text-decoration:underline;
- }
 
- /*not mine*/
- /*Header*/
- .header 
- {position: fixed; top: 0; left: 0;
-    width: 100%; display: flex; height: 80px ; align-items: center; justify-content: space-between; 
-    background-color: #f7d9d9; padding: 10px 40px; box-shadow: 0 2px 4px rgba(0,0,0,.1); z-index: 1000;}
-
-.logo 
-    {width: 160px;
-    height: auto;}
-
-nav 
-{background-color: #f7d9d9; display: flex; flex:1; justify-content:flex-end;justify-content: space-between; 
-    align-items: center; padding: 10px 20px; font-size: 1.2em; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); z-index: 1000; border-radius: 12px;
-    height: auto;}
-nav ul 
-{ margin: 0px; padding: 0;} 
-nav li{
-    margin-right: 40px; font-size:larger}
-nav a 
-{ text-decoration: none; color: #cc7f7f; font-weight: bold;}
-nav a:hover
- { color: #eea8a8; font-size: 1.1em; text-decoration: underline; transition: transform 0.3s ease;background-color: #ffcfcf; border-radius: 10px; padding: 5px 10px; }
-.nav-links {
-   display: flex; list-style: none; gap: 45px; margin: 0; padding: 0; }
-
- /*DE LEON OLSEN PHILIP CASIL, 261056B */
-
-.accordion {
-  margin: 60px auto;
-  width: 600px ;
+ body {
+    font-family: 'Fredoka One', cursive;
+    background-color: beige;
+        padding-top: 65px;
 }
 
-/* width: 80% gives li a wrapper 80% of parent container */
-/*margin:20px, 20px of vertical space, auto makes the li center automatically */
-/*box shadow syntax is: right, bottom, blur radius (how soft the edge of the shadow is), spread radius (positive value shadow spread out,
- negative value shadow smaller than element, rgba is the color+transparency of element */
-.accordion li{
-list-style: none;
-width:80%;
-margin-bottom: 4px;
-margin:20px auto;
-padding:12px 20px;
-border-radius:8px;
-background: #fdf8ee92;
-box-shadow: 10px 10px 20px -2px rgba(139, 111, 71, 0.182),
-            -6px -6px 10px -1px rgba(255, 253, 245, 0.3)
-}
-/* Targets the label headers!! if direct child combinator not added all the labels will be styled the same! */
-/* targets direct child of li!!!! */
-/* main thing: increases size for customer support */
-.accordion li > label{
-display: flex;
-align-items: center;
-padding:10px;
-font-size: 18px;
-font-weight:500;
-cursor:pointer;
-}
-.accordion input::placeholder,
-.accordion textarea::placeholder {
-    font-family: 'Fredoka-one' , cursive;
+.intro-text {
+  text-align: center;
+  margin-bottom:45px;
 }
 
-/* before: is a pseudo element*/
-/* .accordion -> looks at ul accordian class.
-.accordion li -> looks inside each li, its direct children
-, in order, are: <input>, <label>, <br>, <br>, <div class="content"> */
-.accordion li > label:before{
-    content: '+';
-    margin-right: 10px;
-    font-size: 24px;
-    font-weight:600;
+ .accordion {
+  width: 800px;
+  margin: 10px auto 40px; /* top spacing to clear the fixed header, rest stays centered */
 }
 
-input[type="radio"] {
-    display:none;
-    padding: 10px 0px;
-}
-
-/* hides the content */
-/* it collapses the box to zero height and clips anything inside it */
-.accordion .content {
-    color: #555;
-    padding: 0 0;
-    line-height: 26px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease, padding 0.3s ease;
+ .accordion > details {
+  border: 1px solid beige;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 
-/*input[type="radio"] find a radio button inside .accordion , only when ::checked*/
-/* When this radio button is checked, find its sibling label, and then find the sibling AFTER that label  the .content and apply these styles to it. */
-
-.accordion input[type="radio"]:checked + label + .content {
-    max-height: none;
-    padding: 10px 10px 20px;
+details[open] summary {
+  padding-bottom: 10px;
 }
 
-/*Flips the icon */
-.accordion input[type="radio"]:checked + label:before {
-content:'-';
+/*hazeerahs button */
+.submit {
+  color: #eea8a8;
+   font-family: "fredoka one";
+  border: 2px solid #eea8a8;
+  background-color: white;
+  padding: 10px 25px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 25px;
 }
 
-details {
-    margin:4px; 
-}
-
-details > p{
-    font-weight:bold;
+.submit:hover {
+  background-color: #f18080;
+  color: white;
 }
 
