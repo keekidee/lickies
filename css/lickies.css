@@ -253,7 +253,7 @@ a:visited {
     object-fit: cover;
   }
 
-  /* prevent long words from overflowing */
+  /* prevent long words from overflowing so that it doesn't break the layout on small screens */
   .origin-text,
   .card p,
   .card h3,
@@ -316,7 +316,7 @@ a:visited {
   gap: 30px;
 }
 
-/* button */
+/* button styles */
 .button {
   background: #f7d9d9;
   color: #1b1a1a;
