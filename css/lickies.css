@@ -64,7 +64,8 @@ p {
 }
 
 /* Navigation bar styles, logo and header created with reference to Bro Code "How to create a CSS navigation bar in 6 minutes!" 🧭 
-Header contains the logo and nav bar, I preferred the style and also it allowed me to position them properly */
+Header contains the logo and nav bar, I preferred the style and also it allowed me to position them properly. I learned about flex through
+a tutorial by Slaying the Dragon on youtube Learn Flexbox CSS in 8 minutes */
 
 header {
   width: 100%;
@@ -307,6 +308,7 @@ nav a:hover {
   gap: 30px;
 }
 
+/* video styles, made with reference to W3 schools, allows the videos to be responsive and fit the screen size */
 video {
   max-width: 480px;
   height: auto;
@@ -314,17 +316,10 @@ video {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
 }
-
+/* video styles*/
 .video-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 12px;
   overflow: hidden;
   height: auto;
-  align-items: flex-start;
-  margin: 20px auto;
-  flex: 1 1 320px;
   width: 100%;
   max-width: 100%;
 }
@@ -335,6 +330,10 @@ video {
   box-shadow: 1px 1px 2px #1b1a1a;
   border-radius: 12px;
   color: black;
+}
+ video:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
 }
 
 /* button styles */
