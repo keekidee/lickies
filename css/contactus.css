@@ -59,7 +59,7 @@ details[open] summary {
   border: 2px solid #e9e6e6;
 }
 
-<!--Used claude AI to help with the responsiveness of the form-->
+/*Used claude AI to help with the responsiveness of the form*/
 input[type="text"],
 input[type="email"],
 select,
