@@ -63,7 +63,7 @@ p {
 }
 
 /* Navigation bar styles, logo and header created with reference to Bro Code "How to create a CSS navigation bar in 6 minutes!" 🧭 
-Header contains the logo and nav bar, */
+Header contains the logo and nav bar, I preferred the style and also it allowed me to position them properly */
 
 header {
   width: 100%;
@@ -190,7 +190,7 @@ nav a:hover {
   }
 }
 
-/* text box (card) styles made with reference to W3 schools */
+/* text box (card) styles made with reference to W3 schools, puts the images and text neatly together which is easier for the user to view */
 .card {
   margin-top: auto;
   transition: all 0.3s ease-in-out;
@@ -221,7 +221,7 @@ nav a:hover {
   }
 }
 
-/* image made with reference to Bro code and W3 schools */
+/* image made with reference to Bro code and W3 schools,  */
 .image-container {
   width: min(100%, 200px);
   aspect-ratio: 1 / 1;
@@ -237,11 +237,13 @@ nav a:hover {
   display: block;
 }
 
+/* positions the image in the card */
 .origin-text {
   flex: 1;
   min-width: 0;
 }
 
+/* border of the images in the card and sizing of the images*/
 .origin-image img {
   max-width: 320px;
   height: auto;
@@ -273,7 +275,7 @@ nav a:hover {
 
 /* button */
 .button {
-  background: var(--pink-bg);
+  background: #f7d9d9;
   color: #1b1a1a;
   border: none;
   padding: 10px 20px;
@@ -290,7 +292,6 @@ nav a:hover {
   width: 100%;
   max-width: 200px;
   height: 30px;
-  align-items: center;
 }
 
 
