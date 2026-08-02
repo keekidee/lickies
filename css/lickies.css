@@ -142,16 +142,6 @@ nav a:hover {
   padding: 5px 10px;
 }
 
-/* Prevent hyperlinks from turning blue on mobile */
-a {
-  color: inherit;
-  -webkit-tap-highlight-color: transparent;
-}
-
-a:visited {
-  color: inherit;
-}
-
 .nav-links {
   
   list-style: none;
