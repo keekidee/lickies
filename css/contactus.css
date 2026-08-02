@@ -3,7 +3,15 @@
  body {
     font-family: 'Fredoka One', cursive;
     background-color: #ece5d5;
+
  }
+
+ .icon{
+  width:40px;
+  height:auto;
+  vertical-align:middle;
+  margin-left: 10px;
+}
 
 h1 {
   text-decoration:underline;
@@ -15,8 +23,9 @@ h1 {
 }
 
  .accordion {
-  width: 800px;
-  margin: 10px auto 40px; /* top spacing to clear the fixed header, rest stays centered */
+  width: 90%;
+  max-width: 800px;
+  margin: 10px auto 40px;
 }
 
  .accordion > details {
@@ -34,9 +43,9 @@ details[open] summary {
 
 /*hazeerahs button */
 .submit {
-  color: #eea8a8;
+  color: black;
    font-family: "fredoka one";
-  border: 2px solid #eea8a8;
+  border: 2px solid black;
   background-color: white;
   padding: 10px 25px;
   font-size: 12px;
@@ -47,5 +56,30 @@ details[open] summary {
 .submit:hover {
   background-color: #f18080;
   color: white;
+  border: 2px solid #e9e6e6;
 }
 
+<!--Used claude AI to help with the responsiveness of the form-->
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .accordion > details {
+    padding: 15px;
+    margin: 8px 0;
+  }
+
+  .after-submit {
+    padding: 15px;
+  }
+}
+
+.after-submit p {
+  word-break: break-word;
+}
