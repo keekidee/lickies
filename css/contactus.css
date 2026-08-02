@@ -1,0 +1,52 @@
+/* DE LEON OLSEN PHILIP CASIL, 261056B */
+
+ body {
+    font-family: 'Fredoka One', cursive;
+    background-color: beige;
+        padding-top: 65px;
+ }
+ 
+
+ /*DE LEON OLSEN PHILIP CASIL, 261056B */
+
+
+.intro-text {
+  text-align: center;
+  margin-bottom:45px;
+}
+
+ .accordion {
+  width: 800px;
+  margin: 10px auto 40px; /* top spacing to clear the fixed header, rest stays centered */
+}
+
+ .accordion > details {
+  border: 1px solid beige;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+details[open] summary {
+  padding-bottom: 10px;
+}
+
+/*hazeerahs button */
+.submit {
+  color: #eea8a8;
+   font-family: "fredoka one";
+  border: 2px solid #eea8a8;
+  background-color: white;
+  padding: 10px 25px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.submit:hover {
+  background-color: #f18080;
+  color: white;
+}
+

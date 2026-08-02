@@ -1,0 +1,268 @@
+/* Full Name:Jiao Wenbo, Admin no. :261393E */
+
+#logo1{width: min( 50%, 90vw); height: auto; 
+    top: 50%; left: 50%;
+    transform: translate(0%, -23%); }
+/* top and left determnines the position of the element,
+since the elemnt is not positioned absolutely,
+ it doesnt overlap the text so i used transform to move the position. */
+
+html{ overflow-y: scroll; }
+/* to determine the vertical scroll behavior */
+
+body{font-family: 'Fredoka One', cursive; 
+  background-color: #ece5d5; overflow-x: hidden;
+user-select: none;   }
+    /* disables the ability to select elements and images on the webpage */
+  /* overflow x is hidden to disable user from horizontally scrolling */
+ h1{ text-align: center; font-family: 'Bagel Fat One'; font-size:clamp(3rem,12vw,9rem); }
+ /* text align aligns the text to the center */
+
+ nav{ background-color: #f7d9d9; 
+  display: flex; 
+  justify-content:
+   space-between; 
+   align-items: center;
+    padding: 2% 2%;height:auto;
+    min-height: 6%;
+     font-size:clamp(0.6rem,2.4vw,1.8rem);
+   position:fixed; top:0; left:0;
+    width:100%; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    z-index: 10; flex-wrap: wrap;} 
+   /* z index is used to control the stacking order of elements */
+  /* display flex stretches the container through the available space */
+  /* justify-content distributes the words through the stretched container */
+  /* padding is used to create space around the content inside the container */ */
+/* margin is used to create space around the container */
+/* position is fixed so the navigation bar stays at the top of the page */
+/* width 100% makes the navigation bar span the entire width of the page */
+/* box shadow creates a shadow around the navigation bar */
+/* em is a unit of measurement for font sizes in this gase it makes the font size 1.2 times larger than the default; */
+
+ nav ul { list-style-type: none; }
+ /* list styles remove the  bullet points */
+ nav li{ display: inline; margin-right: 5px; font-size:  1.2em;}
+ /* display inline makes the list items appear on the same line */
+ /* margin-right creates space between the words */
+ nav a { text-decoration: none; color: #cc7f7f; font-weight: bold;}
+ /* text decoration removes the underline from links */
+nav a:hover { color: #eea8a8; font-size: 1.1em; 
+  text-decoration: underline; transition: transform 0.3s ease;
+  background-color: #ffcfcf; border-radius: 10px; 
+  padding: 5px 10px;   }
+/* transition makes the hover effect smooth */
+/* border radius makes the corners rounded */
+
+
+ .footer { display: block; background-color: #f7d9d9;
+   color: #cc7f7f; font-weight: bold; padding: 10px 20px;
+   margin-top: 60px;
+    border-radius: 5px; text-decoration: none; font-size: 1.2em;}   
+ .banner { display: block; margin: 0 auto; border-radius: 24px;
+  box-shadow: 4px 16px 32px rgba(0, 0, 0, 0);  } 
+ .banner:hover { transform: scale(1.1); transition: transform 0.3s ease;
+   box-shadow: 8px 16px 32px rgba(255, 198, 198, 0.5); cursor: pointer; 
+   border-color: #ffcfcf; border-width: 3px; border-style: solid; }
+ .header { text-align: center; margin-top: 20px;font-size:clamp(2rem,4vw,6rem); color: #cc7f7f; 
+  text-shadow: 2px 2px #f7d9d9; }
+
+ .welcome { text-align: center; margin-top: 60px; color: #ff8495;
+     text-shadow: 6px 8px #2c1605; }
+     /* margin top is the margin at the top of the element */
+     
+
+     .scrolling-banner {white-space: nowrap;}
+     /* white-space: nowrap; keep the banner images on a single line */
+
+.scrolling-banner img {
+  width: min(900px, 90vw);
+  height: auto;
+  display: inline-block;
+  animation: scroll 20s linear infinite;
+  margin-right: 20px; }
+  /* inline-block displays the images in a row */
+  /* animation is custom and is below */
+  /* margin right creates space on the right of the banner images */
+@keyframes scroll {
+ 0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-310%);
+  }
+}
+/* at start of animation (0%) its at the 0% at the x axis,
+ it will slowly move until it reaches -310% at the x axis which is at 100%*/
+
+ 
+  #promotion {
+    width: min(900px, 90vw);
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 24px;
+    box-shadow: 4px 16px 32px rgba(0, 0, 0, 0);
+    transition: transform 0.3s ease;}
+     /* position relative makes it so you can change it later on with position properties */
+     /* margin auto lets the device decide its margin and keep it centered */
+   /* display block makes it so its solid */
+  #promotion-button {
+    display: block;
+    margin: -60px auto ;
+    padding: clamp(14px, 3vw, 30px) clamp(18px, 4vw, 40px);
+  font-size: clamp(1.1rem, 2.8vw, 3rem);
+  width: fit-content;
+   max-width: min(90vw, 420px);
+    background-color: #e24949;
+    color: #f2e3e3;
+
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Fredoka One', cursive;
+    transform: translate(0%, -150%);
+    animation: bounce 1s infinite;
+    border: clamp(6px, 1.2vw, 13px) solid #8a2424; }
+/* bounce animation code is below */
+
+
+@media (max-width: 768px) {
+  #promotion-button {
+    transform: translateY(-180%);
+    margin-top: 10px;
+    animation: none;
+  }
+}
+  #promotion-button:hover {
+    background-color: #f03838;
+    border: 13px solid #b81f1f;
+    color: #e6dcdc;
+    transform: scale(1.05) translate(0%, -150%);
+    text-shadow: 2px 2px #3d3535;
+    box-shadow: 0 0 20px #0f0e0e;
+    animation:none;
+  }
+  /* animation none stops the animation so the next action can happen
+  translate keeps the button from going back to its original position */
+  @keyframes bounce {
+    0%, 100% {transform: translateY(-150%);}
+    50% {transform: translateY(-151%);}
+  }
+  /* moves from y axis -150 to -151 */
+
+  #promotion:hover {transform: scale(1.005);}
+
+
+.podium-stage {
+  position: relative;
+  width: min(1100px, 90vw);
+  margin: 0 auto;
+  padding-top: 20px;
+}
+/* vw is based on screen width */
+
+#podium {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 24px;
+}
+
+.tops {
+  position: absolute;
+  z-index: 5;
+  object-fit: contain;
+  transition:  0.3s ease;
+  cursor: pointer;
+  
+}
+/* object fit stops the images from stretching */
+
+#top1 {
+  height: 40%;
+  width: 40%;
+  left: 50%;
+  top: 54%;
+  margin-left: -20%;
+  margin-top: -20%;
+  animation: bounce-top1 3s infinite;
+  z-index: 7;
+}
+
+#top2 {
+  height: 50%;
+  width: 50%;
+  left: 26%;
+  top: 58%;
+  margin-left: -25%;
+  margin-top: -25%;
+  animation: bounce-top2 2.5s infinite;
+}
+
+#top3 {
+  height: 40%;
+  width: 40%;
+  left: 76%;
+  top: 58%;
+  margin-left: -20%;
+  margin-top: -20%;
+  animation: bounce-top3 2.3s infinite;
+}
+
+#top4 {
+  height: 30%;
+  width: 30%;
+  left: 10%;
+  top: 93%;
+  margin-left: -15%;
+  margin-top: -15%;
+
+}
+
+#top5 {
+  height: 25%;
+  width: 25%;
+  left: 43%;
+  top: 94%;
+  margin-left: -12.5%;
+  margin-top: -12.5%;
+}
+
+#top6 {
+  height: 32%;
+  width: 32%;
+  left: 72%;
+  top: 92%;
+  margin-left: -16%;
+  margin-top: -16%;
+}
+
+@keyframes bounce-top1 {
+  0%, 100% { top: 64%; }
+  50% { top: calc(64% - 8px); }
+}
+
+@keyframes bounce-top2 {
+  0%, 100% { top: 68%; }
+  50% { top: calc(68% - 8px); }
+}
+
+@keyframes bounce-top3 {
+  0%, 100% { top: 68%; }
+  50% { top: calc(68% - 8px); }
+}
+
+#top1:hover,
+#top2:hover,
+#top3:hover,
+#top4:hover,
+#top5:hover,
+#top6:hover {
+  filter: brightness(1.1);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
+#cat {color:#f7d9d9}

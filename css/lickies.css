@@ -1,0 +1,370 @@
+/* zakira roberta harris 261084W
+   lickies font styles */
+
+/* can reuse the colour and style in elements */
+:root {
+  --shadow: rgba(0, 0, 0, 0.1);
+  --card-shadow: rgba(0, 0, 0, 0.2);
+}
+
+/* text styles, headers */
+body {
+  margin: 20px;
+  padding-top: 0;
+  font-family: 'Fredoka One', cursive;
+  background-color: #ece5d5;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Bagel Fat One', cursive;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: #eea8a8;;
+}
+
+h2 {
+  color: #72bc76;
+  font-size: 36px;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  margin: 20px 0;
+  color: #72bc76;
+  font-size: 30px;
+}
+
+h4 {
+  text-align: left;
+}
+
+figcaption {
+  text-align: center;
+  background-color: #f4a8b8;
+  box-shadow: 1px 1px 2px #1b1a1a;
+  border-radius: 12px;
+  color: black;
+}
+
+p {
+  text-align: left;
+}
+/*underlining the text*/
+.brush-heading {
+  text-decoration-line: underline;
+  text-decoration-color: #f4a8b8;
+  text-decoration-thickness: 4px;
+}
+
+.brush-heading2 {
+  text-decoration-line: underline;
+  text-decoration-color: #eea8a8;;
+  text-decoration-thickness: 4px;
+}
+
+/* Navigation bar styles, logo and header created with reference to Bro Code "How to create a CSS navigation bar in 6 minutes!" 🧭, Framer Navigations: Horizontal Side Scroller video and other nav bar tutorials
+Header contains the logo and nav bar, I preferred the style and also it allowed me to position them properly. I learned about flex through
+a tutorial by Slaying the Dragon on youtube Learn Flexbox CSS in 8 minutes and a Coding2go video Learn CSS Flexbox in 20 Minutes (Course) */
+
+header {
+  width: 100%;
+  display: flex;
+  height: 68px;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+  background-color: #f7d9d9;
+  padding: 8px 20px;
+  box-shadow: 0 2px 4px var(--shadow);
+  z-index: 1000;
+  margin-bottom: 16px;
+  border-radius: 10px;
+}
+
+.logo {
+  width: 120px;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: auto;
+}
+
+nav {
+  background-color: #f7d9d9;
+  display: flex;
+  flex: 1;
+  overflow-x: auto;
+  overflow-y: hidden;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  font-size: clamp(0.85rem, 1.8vw, 1.05rem);
+  box-shadow: 0 2px 4px var(--shadow);
+  border-radius: 10px;
+  height: auto;
+  scrollbar-width: none;
+}
+
+nav ul {
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 0 4px;
+  width: max-content;
+  min-width: max-content;
+  display: flex;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  gap: clamp(10px, 2vw, 18px);
+}
+
+nav li {
+  margin: 0;
+  flex-shrink: 0;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: #cc7f7f;
+  font-weight: bold;
+  padding: 4px 8px;
+  white-space: nowrap;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* nav a:hover created by Wenbo */
+nav a:hover {
+  color: #eea8a8;;
+  transform: scale(1.05);
+  text-decoration: underline;
+  transition: transform 0.3s ease;
+  background-color: #ffcfcf;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.nav-links {
+  
+  list-style: none;
+  gap: clamp(12px, 3vw, 24px);
+  align-items: center;
+}
+
+/* code generated with the help of AI to make page compatible on phones */
+@media (max-width: 768px) {
+  header {
+    flex-direction: row;
+    height: 58px;
+    padding: 8px 12px;
+    gap: 8px;
+  }
+
+  nav {
+    width: auto;
+    justify-content: flex-start;
+    padding: 4px 8px;
+    overflow-x: auto;
+  }
+
+   nav a {
+    display: inline-block;
+    margin: 6px 0;
+  }
+
+  nav ul {
+    width: max-content;
+    min-width: max-content;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 8px 12px;
+  }
+
+  nav li {
+    flex-shrink: 0;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px 12px;
+  }
+}
+
+/* text box (card) styles made with reference to W3 schools, puts the images and text neatly together which is easier for the user to view */
+.card {
+  margin-top: auto;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: #f7d9d9;
+  padding: 30px;
+  margin: 60px 0;
+  border-radius: 20px;
+  box-shadow: 2px 2px 6px var(--card-shadow);
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+
+  /* ensure cards are centered on small screens and content doesn't get cut off */
+  .card {
+    width: calc(100% - 40px); /* leave some space for device edges */
+    max-width: 720px;
+    margin: 20px auto; /* center horizontally */
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: visible;
+  }
+
+  .content-row {
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+  }
+
+  /* make images responsive inside the card */
+  .origin-image,
+  .image-container {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .origin-image img,
+  .image-container img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  /* prevent long words from overflowing so that it doesn't break the layout on small screens */
+  .origin-text,
+  .card p,
+  .card h3,
+  .card h4 {
+    min-width: 0;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+}
+
+/* image made with reference to Bro code and W3 schools,  */
+.image-container {
+  width: min(100%, 200px);
+  aspect-ratio: 1 / 1;
+  border: 1px solid;
+  color: #f7d9d9;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.image-container img {
+  object-fit: cover;
+  object-position: 80% 100%;
+  display: block;
+}
+
+/* positions the image in the card */
+.origin-text {
+  flex: 1;
+  min-width: 0;
+}
+
+/* border of the images in the card and sizing of the images*/
+.origin-image img {
+  max-width: 320px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 24px;
+  border: 5px solid;
+  color: #f7d9d9;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.origin-image {
+  width: min(100%, 320px);
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.origin-image img:hover {
+  transform: scale(1.03);
+}
+
+/* Code generated using AI (chat GPT) to make the content row and card responsive */
+.content-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+/* video styles, made with reference to W3 schools, allows the videos to be responsive and fit the screen size */
+video {
+  max-width: 480px;
+  height: auto;
+  border-radius: 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+/* video styles*/
+.video-container {
+  overflow: hidden;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.video figcaption {
+  text-align: center;
+  background-color: #f4a8b8;
+  box-shadow: 1px 1px 2px #1b1a1a;
+  border-radius: 12px;
+  color: black;
+}
+ video:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+/* button styles */
+.button {
+  background: #f7d9d9;
+  color: #1b1a1a;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  align-items: center;
+}
+
+.button-container {
+  background-color: #cc7f7f;
+  font-family: 'Fredoka One', cursive;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+
+    
+
+   
+    
+   
+

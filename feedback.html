@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback Form — Lickies</title>
-    <link rel="stylesheet" href="lickies.css">
+    <link rel="stylesheet" href="css/lickies.css">
     <!-- Import Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
     <link rel="icon" type="image/x-icon" href="images/lickiesfavicon.png">
     
     <!-- CSS stylesheet just for forms-->
-    <link rel="stylesheet" href="orderform.css">
+    <link rel="stylesheet" href="css/orderform.css">
 
 </head>
 <body>
@@ -38,8 +38,7 @@
     </nav>   
     </header>
 
-
-
+<div class="form-wrapper">
     <div class="form-box-small">
         <div class="form-container">
             <h1>
@@ -67,13 +66,15 @@
             <label for="feedback">Your Feedback:</label><br>
             <div class="textarea">
             <textarea name="feedback" id="feedback" rows="7" cols="50"
-            placeholder="Enter your feedback here..." required></textarea><br>
+            placeholder="Enter your feedback here..." required></div></textarea><br>
 
             <div class="button-clear">
             <button class="btn submit">Send Feedback</button>
-            <input type="reset" value="Clear Form"></button></div>
+            <input type="reset" value="Clear Form"></div>
+            </form>
 
         </div>
+    </div>
 <hr>
 <div class="footer">
      <p>📍 Singapore</p>
@@ -83,5 +84,6 @@
 </div>
 
     <button onclick="window.location.href='credits.html'" class="button-container">Credits</button>
+</div>
 </body>
 </html>
