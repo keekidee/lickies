@@ -2,14 +2,16 @@
 
  body {
     font-family: 'Fredoka One', cursive;
-    background-color: beige;
-        padding-top: 65px;
+    background-color: #ece5d5;
  }
 
-
+h1 {
+  text-decoration:underline;
+}
 .intro-text {
   text-align: center;
   margin-bottom:45px;
+
 }
 
  .accordion {
@@ -18,7 +20,7 @@
 }
 
  .accordion > details {
-  border: 1px solid beige;
+  border: 1px solid #ece5d5;
   margin: 10px;
   border-radius: 10px;
   padding: 30px;
