@@ -63,9 +63,9 @@ p {
   text-decoration-thickness: 4px;
 }
 
-/* Navigation bar styles, logo and header created with reference to Bro Code "How to create a CSS navigation bar in 6 minutes!" 🧭 
+/* Navigation bar styles, logo and header created with reference to Bro Code "How to create a CSS navigation bar in 6 minutes!" 🧭, Framer Navigations: Horizontal Side Scroller video and other nav bar tutorials
 Header contains the logo and nav bar, I preferred the style and also it allowed me to position them properly. I learned about flex through
-a tutorial by Slaying the Dragon on youtube Learn Flexbox CSS in 8 minutes */
+a tutorial by Slaying the Dragon on youtube Learn Flexbox CSS in 8 minutes and a Coding2go video Learn CSS Flexbox in 20 Minutes (Course) */
 
 header {
   width: 100%;
