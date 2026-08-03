@@ -9,6 +9,13 @@
 since the elemnt is not positioned absolutely,
  it doesnt overlap the text so i used transform to move the position. */
 
+.logo {
+  width: 120px;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: auto;
+} 
+
 html{ overflow-y: scroll; }
 /* to determine the vertical scroll behavior */
 
