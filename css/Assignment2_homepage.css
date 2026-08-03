@@ -4,8 +4,7 @@
     top: 50%; left: 50%;
     transform: translate(0%, -23%); 
     display: block; 
-    margin: 0 auto;
-   transform: translate(0%, -23%);}
+    margin: 0 auto;}
 /* top and left determnines the position of the element,
 since the elemnt is not positioned absolutely,
  it doesnt overlap the text so i used transform to move the position. */
