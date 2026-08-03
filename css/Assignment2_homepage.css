@@ -20,7 +20,7 @@ user-select: none;   }
  h1{ text-align: center; font-family: 'Bagel Fat One'; font-size:clamp(3rem,12vw,9rem); }
  /* text align aligns the text to the center */
 
-
+/*nav bar made mostly by kira  */
 heading{
   width: 100%;
   display: flex;
@@ -82,7 +82,7 @@ nav a {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* nav a:hover created by Wenbo */
+
 nav a:hover {
   color: #eea8a8;
   transform: scale(1.05);
