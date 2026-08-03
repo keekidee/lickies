@@ -43,7 +43,7 @@ user-select: none;   }
 
  nav ul { list-style-type: none; }
  /* list styles remove the  bullet points */
- nav li{ display: inline; margin-right: 5px; font-size:  1.2em;}
+ nav li{ display: inline; margin-right: 5px; font-size:(0.6rem,2.4vw,1.8rem);}
  /* display inline makes the list items appear on the same line */
  /* margin-right creates space between the words */
  nav a { text-decoration: none; color: #cc7f7f; font-weight: bold;}
