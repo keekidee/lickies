@@ -75,7 +75,7 @@ header {
   box-sizing: border-box;
   justify-content: space-between;
   background-color: #f7d9d9;
-  padding: 4%;
+  padding: 3%;
   box-shadow: 0 2px 4px var(--shadow);
   z-index: 1000;
   margin-bottom: 16px;
