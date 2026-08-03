@@ -84,7 +84,7 @@ nav a {
 
 /* nav a:hover created by Wenbo */
 nav a:hover {
-  color: #eea8a8;;
+  color: #eea8a8;
   transform: scale(1.05);
   text-decoration: underline;
   transition: transform 0.3s ease;
