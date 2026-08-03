@@ -9,7 +9,7 @@
 
 /* text styles, headers */
 body {
-  margin: 20px;
+  margin: 0;
   padding-top: 0;
   font-family: 'Fredoka One', cursive;
   background-color: #ece5d5;
@@ -75,11 +75,12 @@ header {
   box-sizing: border-box;
   justify-content: space-between;
   background-color: #f7d9d9;
-  padding: 8px 20px;
+  padding: 4%;
   box-shadow: 0 2px 4px var(--shadow);
   z-index: 1000;
   margin-bottom: 16px;
   border-radius: 10px;
+  margin-top: none;
 }
 
 .logo {
@@ -97,12 +98,12 @@ nav {
   overflow-y: hidden;
   align-items: center;
   justify-content: center;
-  padding: 6px 12px;
+  padding: 2%;
   font-size: clamp(0.85rem, 1.8vw, 1.05rem);
-  box-shadow: 0 2px 4px var(--shadow);
   border-radius: 10px;
   height: auto;
-  scrollbar-width: none;
+  scrollbar-width: thin;
+   margin-top: none;
 }
 
 nav ul {
@@ -127,8 +128,9 @@ nav a {
   display: inline-block;
   text-decoration: none;
   color: #cc7f7f;
+  font-size: clamp(0.90rem, 1.8vw, 1.30rem);
   font-weight: bold;
-  padding: 4px 8px;
+  padding: 5px 8px;
   white-space: nowrap;
   -webkit-tap-highlight-color: transparent;
 }
