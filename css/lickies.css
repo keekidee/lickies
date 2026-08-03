@@ -77,7 +77,7 @@ header {
   background-color: #f7d9d9;
   padding: 3%;
   box-shadow: 0 2px 4px var(--shadow);
-  z-index: 1000;
+  z-index: 10;
   margin-bottom: 16px;
   border-radius: 10px;
   margin-top: none;
