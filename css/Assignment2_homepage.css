@@ -41,7 +41,8 @@ heading{
   z-index: 1000;
   margin-bottom: 16px;
   border-radius: 10px;
-  margin-top: none;}
+  margin-top: none;
+  position:fixed}
     
 nav {
   background-color: #f7d9d9;
