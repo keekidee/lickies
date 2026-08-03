@@ -89,7 +89,7 @@ header {
   height: auto;
 }
 
-<!-- nav {
+nav {
   background-color: #f7d9d9;
   display: flex;
   flex: 1;
@@ -191,41 +191,7 @@ nav a:hover {
     align-items: center;
     gap: 8px 12px;
   }
-} -->
-nav{ background-color: #f7d9d9; 
-  display: flex; 
-  justify-content:
-   space-between; 
-   align-items: center;
-    padding: 2% 2%;height:auto;
-    min-height: 6%;
-     font-size:clamp(0.6rem,2.4vw,1.8rem);
-   position:fixed; top:0; left:0;
-    width:100%; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    z-index: 10; flex-wrap: wrap;} 
-   /* z index is used to control the stacking order of elements */
-  /* display flex stretches the container through the available space */
-  /* justify-content distributes the words through the stretched container */
-  /* padding is used to create space around the content inside the container */ */
-/* margin is used to create space around the container */
-/* position is fixed so the navigation bar stays at the top of the page */
-/* width 100% makes the navigation bar span the entire width of the page */
-/* box shadow creates a shadow around the navigation bar */
-/* em is a unit of measurement for font sizes in this gase it makes the font size 1.2 times larger than the default; */
-
- nav ul { list-style-type: none; }
- /* list styles remove the  bullet points */
- nav li{ display: inline; margin-right: 5px; font-size:  1.2em;}
- /* display inline makes the list items appear on the same line */
- /* margin-right creates space between the words */
- nav a { text-decoration: none; color: #cc7f7f; font-weight: bold;}
- /* text decoration removes the underline from links */
-nav a:hover { color: #eea8a8; font-size: 1.1em; 
-  text-decoration: underline; transition: transform 0.3s ease;
-  background-color: #ffcfcf; border-radius: 10px; 
-  padding: 5px 10px;   }
-/* transition makes the hover effect smooth */
-/* border radius makes the corners rounded */
+}
 
 /* text box (card) styles made with reference to W3 schools, puts the images and text neatly together which is easier for the user to view */
 .card {
