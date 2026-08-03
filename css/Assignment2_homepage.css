@@ -1,8 +1,11 @@
 /* Full Name:Jiao Wenbo, Admin no. :261393E */
 
 #logo1{width: min( 50%, 90vw); height: auto; 
-    display: block; margin: 0 auto;top: 50%; left: 50%;
-    transform: translate(0%, -23%); }
+    top: 50%; left: 50%;
+    transform: translate(0%, -23%); 
+    display: block; 
+    margin: 0 auto;
+   transform: translate(0%, -23%);}
 /* top and left determnines the position of the element,
 since the elemnt is not positioned absolutely,
  it doesnt overlap the text so i used transform to move the position. */
