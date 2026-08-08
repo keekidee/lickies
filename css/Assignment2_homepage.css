@@ -9,10 +9,18 @@
 since the elemnt is not positioned absolutely,
  it doesnt overlap the text so i used transform to move the position. */
 
+.logo {
+  width: 120px;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: auto;
+} 
+
 html{ overflow-y: scroll; }
 /* to determine the vertical scroll behavior */
 
 body{font-family: 'Fredoka One', cursive; 
+  margin: 0;
   background-color: #ece5d5; overflow-x: hidden;
 user-select: none;   }
     /* disables the ability to select elements and images on the webpage */
@@ -20,40 +28,127 @@ user-select: none;   }
  h1{ text-align: center; font-family: 'Bagel Fat One'; font-size:clamp(3rem,12vw,9rem); }
  /* text align aligns the text to the center */
 
- nav{ background-color: #f7d9d9; 
-  display: flex; 
-  justify-content:
-   space-between; 
-   align-items: center;
-    padding: 2% 2%;height:auto;
-    min-height: 6%;
-     font-size:clamp(0.6rem,2.4vw,1.8rem);
-   position:fixed; top:0; left:0;
-    width:100%; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    z-index: 10; flex-wrap: wrap;} 
-   /* z index is used to control the stacking order of elements */
-  /* display flex stretches the container through the available space */
-  /* justify-content distributes the words through the stretched container */
-  /* padding is used to create space around the content inside the container */ */
-/* margin is used to create space around the container */
-/* position is fixed so the navigation bar stays at the top of the page */
-/* width 100% makes the navigation bar span the entire width of the page */
-/* box shadow creates a shadow around the navigation bar */
-/* em is a unit of measurement for font sizes in this gase it makes the font size 1.2 times larger than the default; */
+/*nav bar made mostly by kira  */
+header {
+  width: 100%;
+  display: flex;
+  height: 68px;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+  background-color: #f7d9d9;
+  padding: 3%;
+  box-shadow: 0 2px 4px var(--shadow);
+  z-index: 10;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  margin-top: none;
+}
+    
+nav {
+  background-color: #f7d9d9;
+  display: flex;
+  flex: 1;
+  overflow-x: auto;
+  overflow-y: hidden;
+  align-items: center;
+  justify-content: center;
+  padding: 1.4%;
+  font-size: clamp(0.85rem, 1.8vw, 1.05rem);
+  border-radius: 10px;
+  height: auto;
+  scrollbar-width: thin;
+}
 
- nav ul { list-style-type: none; }
- /* list styles remove the  bullet points */
- nav li{ display: inline; margin-right: 5px; font-size:  1.2em;}
- /* display inline makes the list items appear on the same line */
- /* margin-right creates space between the words */
- nav a { text-decoration: none; color: #cc7f7f; font-weight: bold;}
- /* text decoration removes the underline from links */
-nav a:hover { color: #eea8a8; font-size: 1.1em; 
-  text-decoration: underline; transition: transform 0.3s ease;
-  background-color: #ffcfcf; border-radius: 10px; 
-  padding: 5px 10px;   }
-/* transition makes the hover effect smooth */
-/* border radius makes the corners rounded */
+nav ul {
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 0 4px;
+  width: max-content;
+  min-width: max-content;
+  display: flex;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  gap: clamp(10px, 2vw, 18px);
+  list-style-type: none;
+}
+
+nav li {
+  margin: 0;
+  flex-shrink: 0;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: #cc7f7f;
+  font-size: clamp(0.90rem, 1.8vw, 1.30rem);
+  font-weight: bold;
+  padding: 5px 8px;
+  white-space: nowrap;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+nav a:hover {
+  color: #eea8a8;
+  transform: scale(1.05);
+  text-decoration: underline;
+  transition: transform 0.3s ease;
+  background-color: #ffcfcf;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.nav-links {
+  
+  list-style: none;
+  gap: clamp(12px, 3vw, 24px);
+  align-items: center;
+}
+
+/* code generated with the help of AI to make page compatible on phones */
+@media (max-width: 768px) {
+  header {
+    flex-direction: row;
+    height: 58px;
+    padding: 8px 12px;
+    gap: 8px;
+  }
+
+  nav {
+    width: auto;
+    justify-content: flex-start;
+    padding: 4px 8px;
+    overflow-x: auto;
+  }
+
+   nav a {
+    display: inline-block;
+    margin: 6px 0;
+  }
+
+  nav ul {
+    width: max-content;
+    min-width: max-content;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 8px 12px;
+  }
+
+  nav li {
+    flex-shrink: 0;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px 12px;
+  }
+}
 
 
  .footer { display: block; background-color: #f7d9d9;

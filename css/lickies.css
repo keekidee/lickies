@@ -9,7 +9,7 @@
 
 /* text styles, headers */
 body {
-  margin: 20px;
+  margin: 0;
   padding-top: 0;
   font-family: 'Fredoka One', cursive;
   background-color: #ece5d5;
@@ -19,7 +19,7 @@ h1 {
   text-align: center;
   font-family: 'Bagel Fat One', cursive;
   font-size: clamp(2rem, 5vw, 3.5rem);
-  color: #eea8a8;;
+  color: #eea8a8;
 }
 
 h2 {
@@ -75,16 +75,16 @@ header {
   box-sizing: border-box;
   justify-content: space-between;
   background-color: #f7d9d9;
-  padding: 8px 20px;
+  padding: 3%;
   box-shadow: 0 2px 4px var(--shadow);
-  z-index: 1000;
+  z-index: 10; /* ensures the header is always on top, controls the stacking order */
   margin-bottom: 16px;
   border-radius: 10px;
+  margin-top: 0;
 }
 
 .logo {
   width: 120px;
-  justify-content: flex-start;
   flex-shrink: 0;
   height: auto;
 }
@@ -92,17 +92,16 @@ header {
 nav {
   background-color: #f7d9d9;
   display: flex;
-  flex: 1;
-  overflow-x: auto;
-  overflow-y: hidden;
+  flex: 1; /* makes the nav bar take up empty space, to keep the logo and nav bar aligned */
+  overflow-x: auto; /* makes the nav bar scrollable horizontally if the content overflows */
+  overflow-y: hidden; /* makes sure that there is no vertical scroll bar*/
   align-items: center;
   justify-content: center;
-  padding: 6px 12px;
+  padding: 1.4%;
   font-size: clamp(0.85rem, 1.8vw, 1.05rem);
-  box-shadow: 0 2px 4px var(--shadow);
   border-radius: 10px;
-  height: auto;
-  scrollbar-width: none;
+  scrollbar-width: thin; /* makes the scrollbar look thinner and nicer */
+  margin-top: 0;
 }
 
 nav ul {
@@ -113,7 +112,7 @@ nav ul {
   width: max-content;
   min-width: max-content;
   display: flex;
-  white-space: nowrap;
+  white-space: nowrap; /* keeps the text on one line, prevents it from wrapping */
   flex-wrap: nowrap;
   gap: clamp(10px, 2vw, 18px);
 }
@@ -127,10 +126,11 @@ nav a {
   display: inline-block;
   text-decoration: none;
   color: #cc7f7f;
+  font-size: clamp(0.90rem, 1.8vw, 1.30rem);
   font-weight: bold;
-  padding: 4px 8px;
+  padding: 5px 8px;
   white-space: nowrap;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent; /* removes the coloured highlight that appears when you click on a link on mobile devices */
 }
 
 /* nav a:hover created by Wenbo */
@@ -167,14 +167,8 @@ nav a:hover {
     overflow-x: auto;
   }
 
-   nav a {
-    display: inline-block;
-    margin: 6px 0;
-  }
-
   nav ul {
     width: max-content;
-    min-width: max-content;
     flex-wrap: nowrap;
     justify-content: flex-start;
     gap: 8px 12px;
@@ -195,7 +189,6 @@ nav a:hover {
 
 /* text box (card) styles made with reference to W3 schools, puts the images and text neatly together which is easier for the user to view */
 .card {
-  margin-top: auto;
   transition: all 0.3s ease-in-out;
   display: flex;
   align-items: center;
@@ -212,15 +205,15 @@ nav a:hover {
 
   /* ensure cards are centered on small screens and content doesn't get cut off */
   .card {
-    width: calc(100% - 40px); /* leave some space for device edges */
+    width: calc(100% - 40px); /* leave some space for device edges, calculated amount */
     max-width: 720px;
-    margin: 20px auto; /* center horizontally */
+    margin: 20px auto; /*center horizontally */
     text-align: center;
     flex-direction: column;
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
-    overflow: visible;
+    overflow: visible; /* allow content to overflow if necessary so that it is still visible */
   }
 
   .content-row {
@@ -311,7 +304,6 @@ nav a:hover {
 /* video styles, made with reference to W3 schools, allows the videos to be responsive and fit the screen size */
 video {
   max-width: 480px;
-  height: auto;
   border-radius: 24px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
@@ -319,18 +311,10 @@ video {
 /* video styles*/
 .video-container {
   overflow: hidden;
-  height: auto;
   width: 100%;
   max-width: 100%;
 }
 
-.video figcaption {
-  text-align: center;
-  background-color: #f4a8b8;
-  box-shadow: 1px 1px 2px #1b1a1a;
-  border-radius: 12px;
-  color: black;
-}
  video:hover {
   transform: scale(1.03);
   transition: transform 0.3s ease;
@@ -344,7 +328,6 @@ video {
   padding: 10px 20px;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  align-items: center;
 }
 
 .button-container {
@@ -357,8 +340,8 @@ video {
   height: 30px;
   display: flex;
   justify-content: center;
-  align-items: center;
   margin: 20px auto;
+  -webkit-tap-highlight-color: transparent; /* removes the coloured highlight that appears when you click on a link on mobile devices */
 }
 
 

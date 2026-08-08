@@ -70,7 +70,7 @@
      <img src="images/aboutus/lickiescow-Betsy.jpg"
       alt="Lickies Cow">
       <audio controls style="width: 100%; max-width: 300px;">
-        <source src="media/herdofcowsmooing.mp3" type="audio/mpeg">
+        <source src="media/herdofcowsmooing.mp3" type="audio/mpeg" alt="Audio of cows mooing">
       </audio>
 
             <figcaption>
@@ -78,7 +78,7 @@
             </figcaption>
         </figure>
     </div>
-
+ 
 <div class="card">
 
      <figure class="origin-image">
@@ -129,21 +129,21 @@
         </figure>
 </div>
 
-<!-- Video section made with help from Copilot to make the code responsive, i decided to use inline css because it allowed me to be more precise with the layout and styling of the videos-->
+<!-- Video section made with help from Copilot and W3Schools to make the code responsive, i decided to use inline css because it allowed me to be more precise with the layout and styling of the videos-->
 <div class="card">
     <div class="origin-text">
         <h3 class="brush-heading">Building a Sustainable Future</h3>
         <p style="text-align: center; margin-top: 10px;"><strong>Our Permaculture and Organic Farms</strong></p>
         <div class="video-row" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
             <figure class="video" style="flex: 1 1 320px; max-width: 480px;"> <!-- This section (inline CSS) made with help from Copilot to make the code responsive -->
-                <video width="100%" height="auto" controls>
-                    <source src="media/strawberryfarm.mp4" type="video/mp4" alt="A greenhouse filled with rows of ripe strawberries ready for harvest.">
+                <video width="100%" height="auto" controls autoplay muted loop playsinline preload="auto"> <!-- playinline means that on mobile devices the video will not play fullscreen preload means the video will start loading as soon as the page loads -->
+                    <source src="media/strawberryfarm.mp4" type="video/mp4" alt="Video of rows of strawberries growing in a greenhouse">
                 </video>
                 <figcaption>Organic Greenhouse</figcaption>
             </figure>
             <figure class="video" style="flex: 1 1 320px; max-width: 480px;"><!-- This section (inline CSS) made with help from Copilot to make the code responsive -->
-                <video width="100%" height="auto" controls>
-                    <source src="media/dairyfarm.mp4" type="video/mp4" alt="A herd of cows grazing in a lush green pasture.">
+                <video width="100%" height="auto" controls autoplay muted loop playsinline preload="auto">
+                    <source src="media/dairyfarm.mp4" type="video/mp4" alt="Video of cows grazing on a lush dairy farm">
                 </video>
                 <figcaption>Grazing Lickies Cows</figcaption>
             </figure>
